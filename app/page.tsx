@@ -123,7 +123,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存を推奨",
-              imageUrl: "/elegant-granola-bowl.png",
+              imageUrl: "/images/slide-1.jpg",
             },
             {
               name: "紅茶のグラノーラ",
@@ -134,7 +134,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後は冷凍保存推奨",
-              imageUrl: "/premium-granola-bowl.png",
+              imageUrl: "/images/slide-2.jpg",
             },
             {
               name: "チョコグラノーラ",
@@ -144,7 +144,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/chocolate-granola.png",
+              imageUrl: "/images/slide-3.jpg",
             },
             {
               name: "抹茶グラノーラ",
@@ -154,7 +154,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/berry-granola-bowl.png",
+              imageUrl: "/images/slide-4.jpg",
             },
             {
               name: "Lanaミール",
@@ -164,7 +164,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/premium-granola-bowl.png",
+              imageUrl: "/images/slide-1.jpg",
             },
           ],
         },
