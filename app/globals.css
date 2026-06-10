@@ -169,3 +169,25 @@
 .border-brand-mocha {
   border-color: #c2a98d;
 }
+
+/* —— multi-line clamp utilities (no Tailwind plugin required) —— */
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* optional: a slightly tighter line-height for Japanese on small screens */
+@media (max-width: 768px) {
+  .jp-tight {
+    line-height: 1.6; /* keeps three lines visually balanced */
+    letter-spacing: .01em;
+  }
+}

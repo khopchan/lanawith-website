@@ -4,9 +4,6 @@ import type React from "react"
 
 import { Button } from "@/components/ui/button"
 import {
-  Leaf,
-  Award,
-  Heart,
   Instagram,
   ExternalLink,
   ArrowRight,
@@ -14,6 +11,11 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  Tag,
+  Hand,
+  Star,
+  Heart,
+  Sparkles,
 } from "lucide-react"
 import { useState, useEffect } from "react"
 import ProductTabs from "@/components/product-tabs"
@@ -29,33 +31,23 @@ export default function HomePage() {
   const carouselSlides = [
     {
       id: 1,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7705%202.jpg-iOsZBbqgi6mkXZ4zCEXycVMpzodqfQ.jpeg",
-      alt: "Lana with granola packages",
+      imageUrl: "/images/slide-1.jpg",
+      alt: "桃といちじくとグラノーラのボウル",
     },
     {
       id: 2,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lana0120.jpg-resjDol3pmfqLhku3WM3TZfCT0yYWd.jpeg",
-      alt: "Lana with product styling",
+      imageUrl: "/images/slide-2.jpg",
+      alt: "フルーツグラノーラボウルの俯瞰",
     },
     {
       id: 3,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4191%202.JPG-9eN4r0hGOB9zeKqZbI1J917enqtAVK.jpeg",
-      alt: "Granola bowl with milk",
+      imageUrl: "/images/slide-3.jpg",
+      alt: "エビと野菜のグラノーラサラダボウル",
     },
     {
       id: 4,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lana0094.jpg-2KdmgiffCWf9NzjHtcEOvLSZYXGueG.jpeg",
-      alt: "Stacked oatmeal donuts",
-    },
-    {
-      id: 5,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/B3CFB952-9294-43D0-95FE-CA261650F30E.jpg-ROIObwnGj9IV6D2V3TGe7O58v9w0Eo.jpeg",
-      alt: "Granola close-up",
+      imageUrl: "/images/slide-4.jpg",
+      alt: "グラノーラサラダボウルの俯瞰",
     },
   ]
 
@@ -338,7 +330,15 @@ export default function HomePage() {
               オーナー
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("about-brand")}
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
+              aria-label="私たちについて（このページ内へ移動）"
+            >
+              私たちについて
+            </button>
+            <button
+              onClick={() => window.open("https://lin.ee/bxHhY8L", "_blank")}
               className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
             >
@@ -374,7 +374,7 @@ export default function HomePage() {
             {/* Right-side Drawer Panel */}
             <nav
               id="mobile-drawer"
-              className={`fixed top-0 right-0 z-[101] h-full w-[78vw] max-w-[420px] min-w-[300px] 
+              className={`fixed top-0 right-0 z-[101] h-full w-[60vw] max-w-[280px] min-w-[240px] 
                          rounded-l-2xl border border-white/15
                          bg-gradient-to-b from-black/18 via-black/12 to-black/10
                          shadow-[0_8px_40px_rgba(0,0,0,.35)]
@@ -403,12 +403,12 @@ export default function HomePage() {
                   <li>
                     <button
                       onClick={() => scrollToSection("products")}
-                      className="block rounded-xl border border-white/15 px-5 py-3.5
-                                 text-[15px] md:text-[15.5px] tracking-wide
-                                 bg-white text-brand-dark-brown
+                      className="block rounded-xl border border-white/15 px-4 py-2.5
+                                 text-[14px] tracking-wide
+                                 bg-white text-brand-dark-brown text-center
                                  hover:bg-gray-50 hover:border-white/20
                                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
-                                 transition-colors w-full text-left"
+                                 transition-colors w-full"
                     >
                       商品
                     </button>
@@ -416,12 +416,12 @@ export default function HomePage() {
                   <li>
                     <button
                       onClick={() => scrollToSection("about")}
-                      className="block rounded-xl border border-white/15 px-5 py-3.5
-                                 text-[15px] md:text-[15.5px] tracking-wide
-                                 bg-white text-brand-dark-brown
+                      className="block rounded-xl border border-white/15 px-4 py-2.5
+                                 text-[14px] tracking-wide
+                                 bg-white text-brand-dark-brown text-center
                                  hover:bg-gray-50 hover:border-white/20
                                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
-                                 transition-colors w-full text-left"
+                                 transition-colors w-full"
                     >
                       こだわり
                     </button>
@@ -429,12 +429,12 @@ export default function HomePage() {
                   <li>
                     <button
                       onClick={() => scrollToSection("access")}
-                      className="block rounded-xl border border-white/15 px-5 py-3.5
-                                 text-[15px] md:text-[15.5px] tracking-wide
-                                 bg-white text-brand-dark-brown
+                      className="block rounded-xl border border-white/15 px-4 py-2.5
+                                 text-[14px] tracking-wide
+                                 bg-white text-brand-dark-brown text-center
                                  hover:bg-gray-50 hover:border-white/20
                                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
-                                 transition-colors w-full text-left"
+                                 transition-colors w-full"
                     >
                       アクセス
                     </button>
@@ -442,21 +442,37 @@ export default function HomePage() {
                   <li>
                     <button
                       onClick={() => scrollToSection("owner")}
-                      className="block rounded-xl border border-white/15 px-5 py-3.5
-                                 text-[15px] md:text-[15.5px] tracking-wide
-                                 bg-white text-brand-dark-brown
+                      className="block rounded-xl border border-white/15 px-4 py-2.5
+                                 text-[14px] tracking-wide
+                                 bg-white text-brand-dark-brown text-center
                                  hover:bg-gray-50 hover:border-white/20
                                  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
-                                 transition-colors w-full text-left"
+                                 transition-colors w-full"
                     >
                       オーナー
                     </button>
                   </li>
                   <li>
                     <button
-                      onClick={() => scrollToSection("contact")}
-                      className="block rounded-xl border border-white/15 px-5 py-3.5
-                                 text-[15px] md:text-[15.5px] text-brand-dark-brown tracking-wide text-center
+                      onClick={() => scrollToSection("about-brand")}
+                      className="block rounded-xl border border-white/15 px-4 py-2.5
+                                 text-[14px] tracking-wide
+                                 bg-white text-brand-dark-brown text-center
+                                 hover:bg-gray-50 hover:border-white/20
+                                 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70
+                                 transition-colors w-full"
+                    >
+                      私たちについて
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      onClick={() => {
+                        window.open("https://lin.ee/bxHhY8L", "_blank")
+                        setIsMobileMenuOpen(false)
+                      }}
+                      className="block rounded-xl border border-white/20 bg-white px-4 py-2.5
+                                 text-[14px] text-brand-dark-brown tracking-wide text-center
                                  hover:bg-gray-50 transition-colors w-full"
                     >
                       お問い合わせ
@@ -466,8 +482,8 @@ export default function HomePage() {
 
                 <div className="mt-4">
                   <button
-                    className="block rounded-xl border border-white/20 bg-white px-5 py-3.5
-                               text-[15px] md:text-[15.5px] text-brand-dark-brown tracking-wide text-center
+                    className="block rounded-xl border border-white/20 bg-white px-4 py-2.5
+                               text-[14px] text-brand-dark-brown tracking-wide text-center
                                hover:bg-gray-50 transition-colors w-full"
                     onClick={() => {
                       window.open("https://lanagranola.base.shop/", "_blank")
@@ -579,7 +595,7 @@ export default function HomePage() {
                 style={{ textShadow: "2px 2px 6px rgba(0,0,0,0.6)" }}
               >
                 {/* Mobile layout - more line breaks for readability */}
-                <p className="block md:hidden text-base lg:text-lg">
+                <p className="block md:hidden text-sm md:text-base">
                   幼馴染みのわたしたちが
                   <br />
                   型にはまらない美味しいものを
@@ -597,7 +613,7 @@ export default function HomePage() {
                 </p>
 
                 {/* Desktop layout - fewer line breaks, utilizing width */}
-                <p className="hidden md:block text-lg xl:text-xl max-w-4xl mx-auto">
+                <p className="hidden md:block text-base lg:text-lg max-w-4xl mx-auto">
                   幼馴染みのわたしたちが型にはまらない美味しいものを
                   <br />
                   届けたい想いから作り始めました。
@@ -609,20 +625,22 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div id="heroButtons" className="flex flex-wrap gap-3 md:gap-4 md:justify-center">
+              <div id="heroButtons" className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
-                  className="bg-brand-mocha hover:bg-brand-dark-brown text-white shadow-lg h-10 px-4 text-[14px] md:h-11 md:px-5 md:text-base"
+                  size="lg"
+                  className="bg-[#C2A98D] hover:bg-[#B8A082] text-white px-6 py-3 text-base md:text-lg font-medium rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl japanese-text"
                   onClick={() => window.open("https://lanagranola.base.shop/", "_blank")}
                 >
+                  <ExternalLink className="w-4 h-4 mr-2" />
                   オンラインショップを見る
                 </Button>
-                <a
-                  href="/about"
+                <button
+                  onClick={() => scrollToSection("about-brand")}
                   className="inline-flex items-center gap-2 rounded-xl border border-neutral-300/60 bg-white/90 px-4 h-10 md:h-11 md:px-5 text-[14px] md:text-base hover:bg-white shadow-sm transition japanese-text text-brand-dark-brown hover:text-brand-dark-brown"
                 >
                   私たちについて
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -640,8 +658,9 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-brand-beige/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
-              Lana with.のこだわり
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
+              <span className="font-serif">Lana with.</span>
+              <span className="japanese-text">のこだわり</span>
             </h2>
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-8">
               <iframe
@@ -653,79 +672,64 @@ export default function HomePage() {
                 className="w-full h-full"
               />
             </div>
-            <p className="text-lg text-brand-dark-brown max-w-2xl mx-auto japanese-text">
-              こだわりの素材を使用したグラノーラ専門店として、手作り、素材、そして小ロット新鮮を大切にしています。
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+            <div className="text-center space-y-6">
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <Heart className="w-8 h-8 text-brand-mocha" />
+                <Tag className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-brand-dark-brown">手作りへのこだわり</h3>
-              <p className="text-brand-dark-brown leading-relaxed japanese-text">
-                maoとyunaが一つ一つ丁寧に手作りで仕上げています。 大量生産では出せない、深い味わいと食感を実現。
-              </p>
+              <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">商品名へのこだわり</h3>
+              <div className="max-w-[38ch] md:max-w-none mx-auto">
+                <p
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
+                  style={{ color: "#4B2E23" }}
+                >
+                  素材や味がひと目で伝わるように工夫した名前。
+                  <br />
+                  「見て食べたい」口にして「想像以上においしい」
+                  <br />
+                  と感じてもらえることを目指しています。
+                </p>
+              </div>
             </div>
 
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-6">
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <Leaf className="w-8 h-8 text-brand-mocha" />
+                <Hand className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-brand-dark-brown">厳選された素材</h3>
-              <p className="text-brand-dark-brown leading-relaxed japanese-text">
-                農薬を使わずに育てられた自然素材のみを厳選。 自然の恵みをそのままお届けします。
-              </p>
+              <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">細部までの手仕事</h3>
+              <div className="max-w-[38ch] md:max-w-none mx-auto">
+                <p
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
+                  style={{ color: "#4B2E23" }}
+                >
+                  自家製粉オートミールやナッツを手作業で刻み
+                  <br />
+                  香りや焼き加減にこだわり抜いて仕上げています。
+                  <br />
+                  だからこそ生まれる、唯一無二の味わい。
+                </p>
+              </div>
             </div>
 
-            <div className="text-center space-y-4">
+            <div className="text-center space-y-6">
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <Award className="w-8 h-8 text-brand-mocha" />
+                <Star className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="font-serif text-xl font-bold text-brand-dark-brown">小ロット新鮮</h3>
-              <p className="text-brand-dark-brown leading-relaxed japanese-text">
-                少量ずつ丁寧に製造することで、いつでも新鮮な状態でお届け。 作りたての美味しさをお楽しみいただけます。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Access/Store Information Section */}
-      <section id="access" className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
-              アクセス / 店舗情報
-            </h2>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="w-full aspect-[4/3] md:aspect-[16/9] rounded-2xl shadow-lg mb-6 overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.5403616692537!2d137.165812!3d34.994643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004a3003a19fd47%3A0xb40f5ec83ebddfe9!2z44Kw44Op44OO44O844Op5bCC6ZaA5bqXIExhbmEgd2l0aC4!5e0!3m2!1sja!2sjp!4v1755335366122!5m2!1sja!2sjp"
-                width="600"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full"
-              />
-            </div>
-
-            <p className="mt-2 text-center text-gray-700 japanese-text">
-              日本、〒444-2136 愛知県岡崎市上里１丁目3−２ Lana with.
-            </p>
-
-            <div className="text-center mt-6">
-              <Button
-                className="bg-brand-mocha hover:bg-brand-dark-brown text-white"
-                onClick={() => window.open("https://maps.app.goo.gl/BzCGi1zzDn4HQNcm6", "_blank")}
-              >
-                Googleマップで開く
-              </Button>
+              <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">特別で日常に寄り添う</h3>
+              <div className="max-w-[38ch] md:max-w-none mx-auto">
+                <p
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
+                  style={{ color: "#4B2E23" }}
+                >
+                  大量生産では再現できない深い味わいを追求。
+                  <br />
+                  「特別だけど、日常にそっと寄り添う」
+                  <br />
+                  そんな存在でありたいと願っています。
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -738,10 +742,9 @@ export default function HomePage() {
             owner
           </h2>
 
-          {/* 3カラム固定：スマホでも横3枚・1行で並べる */}
-          <div className="grid grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6">
             {/* mao */}
-            <article className="text-center">
+            <article className="text-center mb-6 md:mb-0">
               <a
                 href="https://www.instagram.com/maoyoga_/"
                 target="_blank"
@@ -751,20 +754,25 @@ export default function HomePage() {
                 <img
                   src="/images/owner/mao.avif"
                   alt="mao"
-                  className="w-full aspect-square object-cover rounded-2xl shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
+                  className="w-full max-h-[220px] md:max-h-none md:aspect-square object-cover rounded-2xl shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </a>
-              <div className="mt-2">
-                <h3 className="text-[14px] md:text-base font-medium text-[#4b2f21]">mao</h3>
-                <p className="text-[11px] md:text-sm text-[#6b5143] mt-1">yoga instructor</p>
-                <p className="text-[10px] md:text-xs text-[#6b5143] mt-1 line-clamp-2 md:line-clamp-3 leading-tight">
-                  ヨガインストラクター。からだにやさしい食と暮らしを研究。焼き上がりの香りに合わせた朝ヨガが日課です。
-                </p>
+              <div className="mt-4">
+                <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">mao</h3>
+                <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
+                  <p className="mb-3">
+                    yoga instructor
+                    <br />
+                    からだにやさしい食と暮らしを研究
+                    <br />
+                    朝ヨガが日課です。
+                  </p>
+                </div>
                 <a
                   href="https://www.instagram.com/maoyoga_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-1 text-[11px] md:text-sm underline underline-offset-4 decoration-[#c6926b] hover:opacity-80"
+                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-[#c6926b] hover:decoration-[#A67C52] transition-colors"
                 >
                   about
                 </a>
@@ -772,7 +780,7 @@ export default function HomePage() {
             </article>
 
             {/* yuna */}
-            <article className="text-center">
+            <article className="text-center mb-6 md:mb-0">
               <a
                 href="https://www.instagram.com/co_no_mawari/"
                 target="_blank"
@@ -782,20 +790,25 @@ export default function HomePage() {
                 <img
                   src="/images/owner/yuna.avif"
                   alt="yuna"
-                  className="w-full aspect-square object-cover rounded-2xl shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
+                  className="w-full max-h-[220px] md:max-h-none md:aspect-square object-cover rounded-2xl shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </a>
-              <div className="mt-2">
-                <h3 className="text-[14px] md:text-base font-medium text-[#4b2f21]">yuna</h3>
-                <p className="text-[11px] md:text-sm text-[#6b5143] mt-1">baker</p>
-                <p className="text-[10px] md:text-xs text-[#6b5143] mt-1 line-clamp-2 md:line-clamp-3 leading-tight">
-                  ベーカー。素材の持ち味を生かした焼き菓子とグラノーラを担当。季節の食材を活かす配合が得意です。
-                </p>
+              <div className="mt-4">
+                <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">yuna</h3>
+                <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
+                  <p className="mb-3">
+                    baker
+                    <br />
+                    素材の持ち味を生かした
+                    <br />
+                    焼き菓子とグラノーラの専門家
+                  </p>
+                </div>
                 <a
                   href="https://www.instagram.com/co_no_mawari/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-1 text-[11px] md:text-sm underline underline-offset-4 decoration-[#c6926b] hover:opacity-80"
+                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-[#c6926b] hover:decoration-[#A67C52] transition-colors"
                 >
                   about
                 </a>
@@ -803,28 +816,85 @@ export default function HomePage() {
             </article>
 
             {/* Lanaについて（2人の写真・ブランド紹介） */}
-            <article className="text-center">
-              <a href="/about" className="group block">
+            <article className="text-center mb-6 md:mb-0">
+              <a
+                href="https://www.instagram.com/lanawith_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
                 <img
                   src="/images/owner/lana.avif"
                   alt="Lanaについて"
-                  className="w-full aspect-square object-cover rounded-2xl shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
+                  className="w-full max-h-[220px] md:max-h-none md:aspect-square object-cover rounded-2xl shadow-sm transition-transform duration-300 group-hover:scale-[1.02]"
                 />
               </a>
-              <div className="mt-2">
-                <h3 className="text-[14px] md:text-base font-medium text-[#4b2f21]">Lanaについて</h3>
-                <p className="text-[11px] md:text-sm text-[#6b5143] mt-1">幼馴染のふたりで運営するLana with。</p>
-                <p className="text-[10px] md:text-xs text-[#6b5143] mt-1 line-clamp-2 md:line-clamp-3 leading-tight">
-                  幼馴染のふたりで運営するLana with.。おいしさと栄養が両立する"日常のごほうび"を届けています。
-                </p>
+              <div className="mt-4">
+                <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">Lanaについて</h3>
+                <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
+                  <p className="mb-3">
+                    幼馴染のふたりで運営する Lana with.
+                    <br />
+                    "日常のごほうび" を届けています。
+                  </p>
+                </div>
                 <a
-                  href="/about"
-                  className="inline-block mt-1 text-[11px] md:text-sm underline underline-offset-4 decoration-[#c6926b] hover:opacity-80"
+                  href="https://www.instagram.com/lanawith_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-[#c6926b] hover:decoration-[#A67C52] transition-colors"
                 >
                   view more
                 </a>
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* About Lana with. Section */}
+      <section id="about-brand" className="pt-16 pb-20 md:pt-20 md:pb-24">
+        <div className="max-w-[1100px] mx-auto px-5">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-stone-800">About Lana with.</h2>
+            <p className="mt-2 text-stone-600 md:text-lg japanese-text">おいしいを、もっと自由に。</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {/* Card 1: ブランドストーリー */}
+            <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
+              <div className="flex items-center mb-2">
+                <Heart className="w-6 h-6 text-amber-700/80 mr-2" />
+                <h3 className="text-xl md:text-2xl font-semibold text-stone-800">ブランドストーリー</h3>
+              </div>
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
+                Lana with.
+                の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
+              </p>
+            </div>
+
+            {/* Card 2: 商品名へのこだわり */}
+            <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
+              <div className="flex items-center mb-2">
+                <Tag className="w-6 h-6 text-amber-700/80 mr-2" />
+                <h3 className="text-xl md:text-2xl font-semibold text-stone-800">商品名へのこだわり</h3>
+              </div>
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
+                Lana with.
+                の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
+              </p>
+            </div>
+
+            {/* Card 3: 開発背景 */}
+            <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6 md:col-span-2">
+              <div className="flex items-center mb-2">
+                <Sparkles className="w-6 h-6 text-amber-700/80 mr-2" />
+                <h3 className="text-xl md:text-2xl font-semibold text-stone-800">開発背景</h3>
+              </div>
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
+                「日常的なグラノーラではない、特別なグラノーラ」を目指し、自家製粉オートミールやナッツを手作業で刻み、香りや焼き加減にこだわっています。大量生産にはない味わいを実現し、"特別だけど身近に置きたくなる"味わいを届けています。
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -854,25 +924,24 @@ export default function HomePage() {
 
             {/* Text and Buttons - centered below images */}
             <div className="text-center">
-              <p
-                className="text-sm md:text-lg leading-relaxed mb-8 japanese-text max-w-3xl mx-auto"
-                style={{ color: "#4B2E23" }}
-              >
-                Lana with. では、OEM生産・卸販売のご依頼も承っております。
-                <br className="hidden md:block" />
-                一緒にオリジナル商品づくりをしてみませんか？
-                <br className="hidden md:block" />
-                お気軽にお問い合わせください。
-              </p>
+              <div className="max-w-[38ch] md:max-w-none mx-auto">
+                <p
+                  className="oem-copy text-[14px] md:text-lg jp-tight leading-relaxed mb-8 japanese-text"
+                  style={{ color: "#4B2E23" }}
+                >
+                  Lana with. では、OEM生産・卸販売のご依頼も承っております。
+                  一緒にオリジナル商品づくりをしてみませんか？ お気軽にお問い合わせください。
+                </p>
+              </div>
 
               {/* Contact buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-row gap-4 justify-center">
                 <Button
                   className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 flex items-center justify-center gap-2"
                   onClick={() => window.open("https://lin.ee/bxHhY8L", "_blank")}
                 >
                   <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.282.628-.63.628H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.63 0-.345.282-.63.63-.63.346 0 .628.285.628.63 0 .344-.282.628-.629.628M24 10.314C24 4.943 18.615.572 12.017.572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.282.628-.63.628-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.63 0-.345.282-.63.63-.63.346 0 .628.285.628.63 0 .344-.282.628-.629.628M24 10.314C24 4.943 18.615.572 12.017.572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
                   </svg>
                   LINEで問い合わせ
                 </Button>
@@ -893,6 +962,47 @@ export default function HomePage() {
                   メールで問い合わせ
                 </Button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Access/Store Information Section */}
+      <section id="access" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
+              アクセス / 店舗情報
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="w-full aspect-[4/3] md:aspect-[16/9] rounded-2xl shadow-lg mb-6 overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.5403616692537!2d137.165812!3d34.994643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004a3003a19fd47%3A0xb40f5ec83ebddfe9!2z44Kw44Op44OO44O844Op5bCC6ZaA5bqXIExhbmEgd2l0aC4!5e0!3m2!1sja!2sjp!4v1755335366122!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              />
+            </div>
+
+            <p className="mt-2 text-center text-gray-700 japanese-text">
+              〒444-2136 愛知県岡崎市上里１丁目3−２
+              <br />
+              Lana with.
+            </p>
+
+            <div className="text-center mt-6">
+              <Button
+                className="bg-brand-mocha hover:bg-brand-dark-brown text-white"
+                onClick={() => window.open("https://maps.app.goo.gl/BzCGi1zzDn4HQNcm6", "_blank")}
+              >
+                Googleマップで開く
+              </Button>
             </div>
           </div>
         </div>
