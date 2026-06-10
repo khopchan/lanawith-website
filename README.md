@@ -28,7 +28,7 @@
 ### 色の変更
 `index.html`のTailwind設定で色をカスタマイズできます：
 
-```javascript
+\`\`\`javascript
 colors: {
     'cream': '#FDF8F3',
     'beige': '#F5F1EB',
@@ -36,7 +36,7 @@ colors: {
     'soft-brown': '#A67B5B',
     'dark-brown': '#5D4E37'
 }
-```
+\`\`\`
 
 ### 画像の更新
 現在はUnsplashのプレースホルダー画像を使用しています。実際の商品画像に置き換えてください。
@@ -56,4 +56,4 @@ colors: {
 
 ## ライセンス
 
-© 2024 lanawith. All rights reserved. 
+© 2024 lanawith. All rights reserved.
