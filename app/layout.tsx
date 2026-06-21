@@ -16,7 +16,7 @@ const notoSerifJP = Noto_Serif_JP({
 })
 
 export const metadata: Metadata = {
-  title: "Lana with. - ハンドメイド グラノーラ専門店",
+  title: "LANA WITH. - ハンドメイド グラノーラ専門店",
   description:
     "GRANOLA SPECIALITY STORE since 2021 mao and yuna - 自然で温かみのあるデザインと、手作りグラノーラの魅力を伝える",
   generator: "v0.app",

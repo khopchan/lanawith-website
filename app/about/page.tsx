@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ArrowLeft, Leaf, Sprout, Cherry } from "lucide-react"
 
-export const metadata = { title: "About | Lana with." }
+export const metadata = { title: "About | LANA WITH." }
 
 export default function AboutPage() {
   return (
@@ -16,7 +16,7 @@ export default function AboutPage() {
             <ArrowLeft size={16} />
             ホームに戻る
           </Link>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">About Lana with.</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">About LANA WITH.</h1>
           <p className="text-lg md:text-xl text-[#EADBC8] leading-relaxed">おいしいを、もっと自由に。</p>
         </div>
       </div>
@@ -47,8 +47,8 @@ export default function AboutPage() {
           </div>
           <div className="bg-[#EADBC8]/20 rounded-2xl p-6 md:p-8">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23]">
-              Lana
-              with.の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
+              LANA
+              WITH.の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
             </p>
           </div>
         </section>
@@ -91,7 +91,7 @@ export default function AboutPage() {
         <section className="text-center">
           <div className="bg-[#4B2E23] text-white rounded-2xl p-6 md:p-8">
             <div className="font-mono text-sm md:text-base leading-relaxed">
-              <p>/ Lana with.</p>
+              <p>/ LANA WITH.</p>
               <p>/ granola speciality store</p>
               <p>/ since 2024</p>
               <p>/ mao and yuna</p>
