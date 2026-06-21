@@ -296,7 +296,7 @@ export default function HomePage() {
             className="font-serif text-2xl md:text-3xl font-bold text-white hover:text-white/90 transition-colors"
             style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
           >
-            Lana with.
+            LANA WITH.
           </a>
 
           {/* Desktop Navigation */}
@@ -659,7 +659,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
-              <span className="font-serif">Lana with.</span>
+              <span className="font-serif">LANA WITH.</span>
               <span className="japanese-text">のこだわり</span>
             </h2>
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-8">
@@ -833,7 +833,7 @@ export default function HomePage() {
                 <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">Lanaについて</h3>
                 <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
                   <p className="mb-3">
-                    幼馴染のふたりで運営する Lana with.
+                    幼馴染のふたりで運営する LANA WITH.
                     <br />
                     "日常のごほうび" を届けています。
                   </p>
@@ -852,11 +852,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Lana with. Section */}
+      {/* About LANA WITH. Section */}
       <section id="about-brand" className="pt-16 pb-20 md:pt-20 md:pb-24">
         <div className="max-w-[1100px] mx-auto px-5">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-stone-800">About Lana with.</h2>
+            <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-stone-800">About LANA WITH.</h2>
             <p className="mt-2 text-stone-600 md:text-lg japanese-text">おいしいを、もっと自由に。</p>
           </div>
 
@@ -868,7 +868,7 @@ export default function HomePage() {
                 <h3 className="text-xl md:text-2xl font-semibold text-stone-800">ブランドストーリー</h3>
               </div>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
-                Lana with.
+                LANA WITH.
                 の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
               </p>
             </div>
@@ -880,7 +880,7 @@ export default function HomePage() {
                 <h3 className="text-xl md:text-2xl font-semibold text-stone-800">商品名へのこだわり</h3>
               </div>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
-                Lana with.
+                LANA WITH.
                 の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
               </p>
             </div>
@@ -929,7 +929,7 @@ export default function HomePage() {
                   className="oem-copy text-[14px] md:text-lg jp-tight leading-relaxed mb-8 japanese-text"
                   style={{ color: "#4B2E23" }}
                 >
-                  Lana with. では、OEM生産・卸販売のご依頼も承っております。
+                  LANA WITH. では、OEM生産・卸販売のご依頼も承っております。
                   一緒にオリジナル商品づくりをしてみませんか？ お気軽にお問い合わせください。
                 </p>
               </div>
@@ -993,7 +993,7 @@ export default function HomePage() {
             <p className="mt-2 text-center text-gray-700 japanese-text">
               〒444-2136 愛知県岡崎市上里１丁目3−２
               <br />
-              Lana with.
+              LANA WITH.
             </p>
 
             <div className="text-center mt-6">
@@ -1031,7 +1031,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <div className="font-serif text-2xl font-bold">Lana with.</div>
+              <div className="font-serif text-2xl font-bold">LANA WITH.</div>
               <p className="text-white/80 japanese-text">ラナウィズ</p>
               <p className="text-white/70 japanese-text">ハンドメイド グラノーラ専門店</p>
               <div className="flex space-x-4">
@@ -1082,7 +1082,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60 japanese-text">
-            <p>&copy; 2025 Lana with. All rights reserved.</p>
+            <p>&copy; 2025 LANA WITH. All rights reserved.</p>
           </div>
         </div>
       </footer>

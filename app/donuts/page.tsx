@@ -13,7 +13,7 @@ export default function DonutsPage() {
             href="/"
             className="font-serif text-2xl font-bold text-brand-dark-brown hover:text-brand-mocha transition-colors"
           >
-            Lana with
+            LANA WITH.
           </a>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="/" className="text-brand-dark-brown hover:text-brand-mocha transition-colors japanese-text">
@@ -150,10 +150,10 @@ export default function DonutsPage() {
       {/* Footer */}
       <footer className="bg-brand-dark-brown text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <div className="font-serif text-2xl font-bold mb-4">Lana with</div>
+          <div className="font-serif text-2xl font-bold mb-4">LANA WITH.</div>
           <p className="text-white/70 japanese-text mb-8">ハンドメイド グラノーラ専門店</p>
           <div className="space-y-2 text-white/60 japanese-text">
-            <p>&copy; 2025 Lana with. All rights reserved.</p>
+            <p>&copy; 2025 LANA WITH. All rights reserved.</p>
           </div>
         </div>
       </footer>
