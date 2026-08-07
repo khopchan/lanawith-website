@@ -5,7 +5,7 @@ import { ArrowLeft, Package, Clock, AlertTriangle, Truck } from "lucide-react"
 
 export default function OatmealDonutsDetailPage() {
   return (
-    <div className="min-h-screen bg-brand-milk-white">
+    <div className="min-h-screen bg-page-gray">
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -81,7 +81,7 @@ export default function OatmealDonutsDetailPage() {
                   <p className="text-brand-dark-brown japanese-text">送料：全国一律 520円</p>
                 </div>
 
-                <div className="bg-brand-beige/30 rounded-xl p-6">
+                <div className="bg-page-gray rounded-xl p-6">
                   <h3 className="font-serif text-lg font-bold text-brand-dark-brown mb-3">セット内容</h3>
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="flex items-center space-x-2">
@@ -183,7 +183,7 @@ export default function OatmealDonutsDetailPage() {
       </section>
 
       {/* Back to Donuts */}
-      <section className="py-12 bg-brand-beige/30">
+      <section className="py-12 bg-page-gray">
         <div className="container mx-auto px-4 text-center">
           <Button
             variant="outline"

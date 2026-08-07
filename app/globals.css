@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
+  --background: #e0e0e0;
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -83,6 +83,7 @@
   --color-brand-milk-white: #faf8f5;
   --color-brand-beige: #eadbc8;
   --color-brand-mocha: #c2a98d;
+  --color-page-gray: #e0e0e0;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -138,6 +139,10 @@
 }
 
 /* Brand color utilities */
+.bg-page-gray {
+  background-color: #e0e0e0;
+}
+
 .bg-brand-milk-white {
   background-color: #faf8f5;
 }
