@@ -286,7 +286,7 @@ export default function HomePage() {
   }, [isMobileMenuOpen])
 
   return (
-    <div className="min-h-screen bg-brand-milk-white">
+    <div className="min-h-screen bg-gray-100">
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
