@@ -5,7 +5,7 @@ import { ArrowRight, Heart, Leaf, Award } from "lucide-react"
 
 export default function DonutsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-page-gray">
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -27,7 +27,7 @@ export default function DonutsPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-xl mb-12">
@@ -54,11 +54,11 @@ export default function DonutsPage() {
       </section>
 
       {/* Product Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-1 gap-8 justify-center">
-              <div className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50 max-w-md mx-auto">
+              <div className="bg-page-gray rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50 max-w-md mx-auto">
                 <div className="aspect-square">
                   <img
                     src="/oatmeal-donuts-gift-box.png"
@@ -90,7 +90,7 @@ export default function DonutsPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-2xl md:text-3xl font-bold text-brand-dark-brown text-center mb-12">
@@ -98,7 +98,7 @@ export default function DonutsPage() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+                <div className="w-16 h-16 bg-page-gray rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                   <Heart className="w-8 h-8 text-brand-mocha" />
                 </div>
                 <h3 className="font-serif text-lg font-bold text-brand-dark-brown">家族で楽しめる</h3>
@@ -107,7 +107,7 @@ export default function DonutsPage() {
                 </p>
               </div>
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+                <div className="w-16 h-16 bg-page-gray rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                   <Leaf className="w-8 h-8 text-brand-mocha" />
                 </div>
                 <h3 className="font-serif text-lg font-bold text-brand-dark-brown">オートミール使用</h3>
@@ -116,7 +116,7 @@ export default function DonutsPage() {
                 </p>
               </div>
               <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+                <div className="w-16 h-16 bg-page-gray rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                   <Award className="w-8 h-8 text-brand-mocha" />
                 </div>
                 <h3 className="font-serif text-lg font-bold text-brand-dark-brown">4つの味</h3>
@@ -130,7 +130,7 @@ export default function DonutsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-page-gray">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-serif text-2xl md:text-3xl font-bold text-brand-dark-brown mb-4">
             新しいオートミールスイーツを体験してみませんか？

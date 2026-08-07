@@ -25,7 +25,7 @@ export default function ProductTabs(props: any) {
             className={`px-4 py-2 rounded-full border transition ${
               activeKey === cat.key
                 ? "bg-amber-100 border-amber-300 text-amber-900"
-                : "bg-gray-50 hover:bg-neutral-50 border-neutral-200"
+                : "bg-page-gray hover:bg-neutral-50 border-neutral-200"
             }`}
           >
             {cat.label}
@@ -40,7 +40,7 @@ export default function ProductTabs(props: any) {
             href="https://lanagranola.base.shop/"
             target="_blank"
             rel="noopener noreferrer"
-            className="group block rounded-2xl overflow-hidden bg-gray-50 border border-neutral-200/70 shadow-sm hover:shadow-md transition"
+            className="group block rounded-2xl overflow-hidden bg-page-gray border border-neutral-200/70 shadow-sm hover:shadow-md transition"
           >
             <div className="aspect-[4/3] w-full overflow-hidden">
               <img

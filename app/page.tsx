@@ -286,7 +286,7 @@ export default function HomePage() {
   }, [isMobileMenuOpen])
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-page-gray">
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
@@ -648,14 +648,14 @@ export default function HomePage() {
       </section>
 
       {/* Products Section */}
-      <section id="products" className="py-20 bg-gray-50">
+      <section id="products" className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <ProductTabs state={catalogState} setState={setCatalogState} />
         </div>
       </section>
 
       {/* Brand Values Section */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
@@ -676,7 +676,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+              <div className="w-16 h-16 bg-page-gray rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                 <Tag className="w-8 h-8 text-brand-dark-brown" />
               </div>
               <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">商品名へのこだわり</h3>
@@ -695,7 +695,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+              <div className="w-16 h-16 bg-page-gray rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                 <Hand className="w-8 h-8 text-brand-dark-brown" />
               </div>
               <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">細部までの手仕事</h3>
@@ -714,7 +714,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+              <div className="w-16 h-16 bg-page-gray rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                 <Star className="w-8 h-8 text-brand-dark-brown" />
               </div>
               <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">特別で日常に寄り添う</h3>
@@ -736,7 +736,7 @@ export default function HomePage() {
       </section>
 
       {/* Owner Section */}
-      <section id="owner" className="py-12 md:py-16 bg-gray-50">
+      <section id="owner" className="py-12 md:py-16 bg-page-gray">
         <div className="mx-auto max-w-6xl px-4">
           <h2 className="text-center text-[28px] md:text-3xl font-serif text-[#4b2f21] mb-8 md:mb-10 tracking-wide">
             owner
@@ -862,7 +862,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {/* Card 1: ブランドストーリー */}
-            <div className="rounded-2xl bg-gray-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
+            <div className="rounded-2xl bg-page-gray border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
                 <Heart className="w-6 h-6 text-amber-700/80 mr-2" />
                 <h3 className="text-xl md:text-2xl font-semibold text-stone-800">ブランドストーリー</h3>
@@ -874,7 +874,7 @@ export default function HomePage() {
             </div>
 
             {/* Card 2: 商品名へのこだわり */}
-            <div className="rounded-2xl bg-gray-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
+            <div className="rounded-2xl bg-page-gray border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
                 <Tag className="w-6 h-6 text-amber-700/80 mr-2" />
                 <h3 className="text-xl md:text-2xl font-semibold text-stone-800">商品名へのこだわり</h3>
@@ -886,7 +886,7 @@ export default function HomePage() {
             </div>
 
             {/* Card 3: 開発背景 */}
-            <div className="rounded-2xl bg-gray-50 border border-stone-200/70 shadow-sm p-5 md:p-6 md:col-span-2">
+            <div className="rounded-2xl bg-page-gray border border-stone-200/70 shadow-sm p-5 md:p-6 md:col-span-2">
               <div className="flex items-center mb-2">
                 <Sparkles className="w-6 h-6 text-amber-700/80 mr-2" />
                 <h3 className="text-xl md:text-2xl font-semibold text-stone-800">開発背景</h3>
@@ -900,7 +900,7 @@ export default function HomePage() {
       </section>
 
       {/* Updated With Us Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4" style={{ color: "#4B2E23" }}>
@@ -968,7 +968,7 @@ export default function HomePage() {
       </section>
 
       {/* Access/Store Information Section */}
-      <section id="access" className="py-20 bg-gray-50">
+      <section id="access" className="py-20 bg-page-gray">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
@@ -1009,7 +1009,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-page-gray">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
             今すぐ特別な朝食を始めませんか？
