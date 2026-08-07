@@ -5,7 +5,7 @@ export const metadata = { title: "About | LANA WITH." }
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#FAF8F5] to-white">
+    <main className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-[#4B2E23] text-white py-8 md:py-12">
         <div className="mx-auto max-w-4xl px-5">
@@ -29,7 +29,7 @@ export default function AboutPage() {
             <Cherry className="text-[#4B2E23]" size={24} />
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23]">ブランドストーリー</h2>
           </div>
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
+          <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] mb-4">
               幼なじみのふたりが営むグラノーラ専門店。「おいしいを、もっと自由に。」をコンセプトに、自分へのごほうびにも、贈り物にも選ばれる特別なお菓子を提供しています。
             </p>
@@ -45,7 +45,7 @@ export default function AboutPage() {
             <Leaf className="text-[#4B2E23]" size={24} />
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23]">商品名へのこだわり</h2>
           </div>
-          <div className="bg-[#EADBC8]/20 rounded-2xl p-6 md:p-8">
+          <div className="bg-gray-50 rounded-2xl p-6 md:p-8">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23]">
               LANA
               WITH.の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
@@ -59,7 +59,7 @@ export default function AboutPage() {
             <Sprout className="text-[#4B2E23]" size={24} />
             <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23]">開発背景</h2>
           </div>
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
+          <div className="bg-gray-50 rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23]">
               「日常的なグラノーラではない、特別なグラノーラ」を目指し、自家製粉オートミールやナッツを手作業で刻み、香りや焼き加減にこだわっています。大量生産にはない味わいを実現し、"特別だけど身近に置きたくなる"味わいを届けています。
             </p>
@@ -70,14 +70,14 @@ export default function AboutPage() {
         <section className="mb-16">
           <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23] mb-8 text-center">創設者について</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#EADBC8]/30">
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-sm border border-[#EADBC8]/30">
               <h3 className="text-xl font-serif font-bold text-[#4B2E23] mb-2">mao</h3>
               <p className="text-[#C2A98D] mb-3">ヨガインストラクター</p>
               <p className="text-sm md:text-base leading-relaxed text-[#4B2E23]">
                 からだにやさしい食と暮らしを研究。焼き上がりの香りに合わせた朝ヨガが日課です。
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#EADBC8]/30">
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-sm border border-[#EADBC8]/30">
               <h3 className="text-xl font-serif font-bold text-[#4B2E23] mb-2">yuna</h3>
               <p className="text-[#C2A98D] mb-3">ベーカー</p>
               <p className="text-sm md:text-base leading-relaxed text-[#4B2E23]">
