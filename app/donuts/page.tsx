@@ -11,7 +11,7 @@ export default function DonutsPage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <a
             href="/"
-            className="font-serif text-2xl font-bold text-brand-dark-brown hover:text-brand-mocha transition-colors"
+            className="font-serif text-2xl text-brand-dark-brown hover:text-brand-mocha transition-colors"
           >
             LANA WITH.
           </a>
@@ -32,7 +32,7 @@ export default function DonutsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-xl mb-12">
               <img
-                src="/colorful-oatmeal-donuts.png"
+                src="/images/products/donut-all.jpg"
                 alt="オートミール焼きドーナツ 4種類"
                 className="w-full h-full object-cover"
               />
@@ -40,7 +40,7 @@ export default function DonutsPage() {
 
             <div className="text-center mb-16">
               <div className="inline-block text-4xl mb-4">🍩</div>
-              <h1 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-6">
+              <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-dark-brown mb-6">
                 オートミール焼きドーナツ
               </h1>
               <p className="text-lg md:text-xl text-brand-dark-brown leading-relaxed max-w-3xl mx-auto japanese-text">
@@ -61,13 +61,13 @@ export default function DonutsPage() {
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50 max-w-md mx-auto">
                 <div className="aspect-square">
                   <img
-                    src="/oatmeal-donuts-gift-box.png"
+                    src="/images/products/donut-all.jpg"
                     alt="オートミール焼きドーナツ６個入り（４種類セット）"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-serif text-xl font-bold text-brand-dark-brown mb-3">
+                  <h3 className="font-heading-jp text-xl text-brand-dark-brown mb-3">
                     オートミール焼きドーナツ６個入り（４種類セット）
                   </h3>
                   <p className="text-brand-dark-brown mb-4 japanese-text">プレーン / ココア / 西尾抹茶 / 紅茶</p>
@@ -93,7 +93,7 @@ export default function DonutsPage() {
       <section className="py-20 bg-brand-beige/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-2xl md:text-3xl font-bold text-brand-dark-brown text-center mb-12">
+            <h2 className="font-heading-jp text-2xl md:text-3xl text-brand-dark-brown text-center mb-12">
               ドーナツの特徴
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -101,7 +101,7 @@ export default function DonutsPage() {
                 <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                   <Heart className="w-8 h-8 text-brand-mocha" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-brand-dark-brown">家族で楽しめる</h3>
+                <h3 className="font-heading-jp text-lg text-brand-dark-brown">家族で楽しめる</h3>
                 <p className="text-brand-dark-brown leading-relaxed japanese-text text-sm">
                   小さなお子様から大人まで、みんなで一緒に楽しめる優しい味わいです。
                 </p>
@@ -110,7 +110,7 @@ export default function DonutsPage() {
                 <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                   <Leaf className="w-8 h-8 text-brand-mocha" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-brand-dark-brown">オートミール使用</h3>
+                <h3 className="font-heading-jp text-lg text-brand-dark-brown">オートミール使用</h3>
                 <p className="text-brand-dark-brown leading-relaxed japanese-text text-sm">
                   栄養豊富なオートミールを使用した、体に優しい焼きドーナツです。
                 </p>
@@ -119,7 +119,7 @@ export default function DonutsPage() {
                 <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                   <Award className="w-8 h-8 text-brand-mocha" />
                 </div>
-                <h3 className="font-serif text-lg font-bold text-brand-dark-brown">4つの味</h3>
+                <h3 className="font-heading-jp text-lg text-brand-dark-brown">4つの味</h3>
                 <p className="text-brand-dark-brown leading-relaxed japanese-text text-sm">
                   プレーン、ココア、西尾抹茶、紅茶の4種類をセットでお楽しみいただけます。
                 </p>
@@ -132,7 +132,7 @@ export default function DonutsPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-brand-mocha to-brand-dark-brown">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-serif text-2xl md:text-3xl font-bold text-white mb-4">
+          <h2 className="font-heading-jp text-2xl md:text-3xl text-white mb-4">
             新しいオートミールスイーツを体験してみませんか？
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto japanese-text">
@@ -150,7 +150,7 @@ export default function DonutsPage() {
       {/* Footer */}
       <footer className="bg-brand-dark-brown text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <div className="font-serif text-2xl font-bold mb-4">LANA WITH.</div>
+          <div className="font-serif text-2xl mb-4">LANA WITH.</div>
           <p className="text-white/70 japanese-text mb-8">ハンドメイド グラノーラ専門店</p>
           <div className="space-y-2 text-white/60 japanese-text">
             <p>&copy; 2025 LANA WITH. All rights reserved.</p>

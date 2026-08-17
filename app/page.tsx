@@ -31,33 +31,28 @@ export default function HomePage() {
   const carouselSlides = [
     {
       id: 1,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7705%202.jpg-iOsZBbqgi6mkXZ4zCEXycVMpzodqfQ.jpeg",
-      alt: "Lana with granola packages",
+      imageUrl: "/images/products/granola-bowls-row.jpg",
+      alt: "LANA WITH. グラノーラ4種",
     },
     {
       id: 2,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lana0120.jpg-resjDol3pmfqLhku3WM3TZfCT0yYWd.jpeg",
-      alt: "Lana with product styling",
+      imageUrl: "/images/products/granola-lana-combo.jpg",
+      alt: "LANAグラノーラ パッケージ",
     },
     {
       id: 3,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4191%202.JPG-9eN4r0hGOB9zeKqZbI1J917enqtAVK.jpeg",
-      alt: "Granola bowl with milk",
+      imageUrl: "/images/products/donut-all.jpg",
+      alt: "オートミール焼きドーナツ 4種類",
     },
     {
       id: 4,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lana0094.jpg-2KdmgiffCWf9NzjHtcEOvLSZYXGueG.jpeg",
-      alt: "Stacked oatmeal donuts",
+      imageUrl: "/images/products/granola-chocolate-combo.jpg",
+      alt: "チョコグラノーラ パッケージ",
     },
     {
       id: 5,
-      imageUrl:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/B3CFB952-9294-43D0-95FE-CA261650F30E.jpg-ROIObwnGj9IV6D2V3TGe7O58v9w0Eo.jpeg",
-      alt: "Granola close-up",
+      imageUrl: "/images/products/granola-bowls-all.jpg",
+      alt: "LANA WITH. グラノーラボウル4種",
     },
   ]
 
@@ -123,7 +118,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存を推奨",
-              imageUrl: "/images/slide-1.jpg",
+              imageUrl: "/images/products/granola-lana-large.jpg",
             },
             {
               name: "紅茶グラノーラ",
@@ -134,7 +129,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後は冷凍保存推奨",
-              imageUrl: "/images/slide-2.jpg",
+              imageUrl: "/images/products/granola-tea-large.jpg",
             },
             {
               name: "チョコグラノーラ",
@@ -144,7 +139,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/images/slide-3.jpg",
+              imageUrl: "/images/products/granola-chocolate-large.jpg",
             },
             {
               name: "抹茶グラノーラ",
@@ -154,7 +149,7 @@ export default function HomePage() {
               weight: "250g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/images/matcha-granola-zenzai.jpg",
+              imageUrl: "/images/products/granola-matcha-large.jpg",
             },
           ],
         },
@@ -170,7 +165,7 @@ export default function HomePage() {
               weight: "100g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/images/slide-1.jpg",
+              imageUrl: "/images/products/granola-lana-mini.jpg",
             },
             {
               name: "紅茶グラノーラ",
@@ -180,7 +175,7 @@ export default function HomePage() {
               weight: "100g",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後は冷凍保存推奨",
-              imageUrl: "/images/slide-2.jpg",
+              imageUrl: "/images/products/granola-tea-mini.jpg",
             },
             {
               name: "チョコグラノーラ",
@@ -190,7 +185,7 @@ export default function HomePage() {
               weight: "100g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/images/slide-3.jpg",
+              imageUrl: "/images/products/granola-chocolate-mini.jpg",
             },
             {
               name: "抹茶グラノーラ",
@@ -200,7 +195,7 @@ export default function HomePage() {
               weight: "100g",
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
-              imageUrl: "/images/matcha-granola-zenzai.jpg",
+              imageUrl: "/images/products/granola-matcha-mini.jpg",
             },
           ],
         },
@@ -216,7 +211,7 @@ export default function HomePage() {
               weight: "10枚",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
-              imageUrl: "/images/slide-1.jpg",
+              imageUrl: "/images/products/cookie-plain.jpg",
             },
             {
               name: "紅茶クッキー（10枚）",
@@ -226,7 +221,7 @@ export default function HomePage() {
               weight: "10枚",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
-              imageUrl: "/images/slide-2.jpg",
+              imageUrl: "/images/products/cookie-tea.jpg",
             },
             {
               name: "チョコクッキー（10枚）",
@@ -246,7 +241,7 @@ export default function HomePage() {
               weight: "10枚",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
-              imageUrl: "/images/slide-4.jpg",
+              imageUrl: "/images/products/cookie-matcha.jpg",
             },
           ],
         },
@@ -262,7 +257,7 @@ export default function HomePage() {
               weight: "6個入り",
               shelfLife: "製造日より1週間",
               storage: "常温保存",
-              imageUrl: "/colorful-oatmeal-donuts.png",
+              imageUrl: "/images/products/donut-all.jpg",
             },
           ],
         },
@@ -293,7 +288,7 @@ export default function HomePage() {
           {/* Left-top logo to home link */}
           <a
             href="/"
-            className="font-serif text-2xl md:text-3xl font-bold text-white hover:text-white/90 transition-colors"
+            className="font-serif text-2xl md:text-3xl text-white hover:text-white/90 transition-colors"
             style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
           >
             LANA WITH.
@@ -303,35 +298,35 @@ export default function HomePage() {
           <nav className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("products")}
-              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-normal tracking-wide"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
             >
               商品
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-normal tracking-wide"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
             >
               こだわり
             </button>
             <button
               onClick={() => scrollToSection("access")}
-              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-normal tracking-wide"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
             >
               アクセス
             </button>
             <button
               onClick={() => scrollToSection("owner")}
-              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-normal tracking-wide"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
             >
               オーナー
             </button>
             <button
               onClick={() => scrollToSection("about-brand")}
-              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-normal tracking-wide"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
               aria-label="私たちについて（このページ内へ移動）"
             >
@@ -339,7 +334,7 @@ export default function HomePage() {
             </button>
             <button
               onClick={() => window.open("https://lin.ee/bxHhY8L", "_blank")}
-              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-semibold"
+              className="text-lg text-white hover:text-white/90 transition-colors japanese-text font-normal tracking-wide"
               style={{ textShadow: "2px 2px 8px rgba(0,0,0,0.8), 0 0 16px rgba(0,0,0,0.6)" }}
             >
               お問い合わせ
@@ -570,7 +565,7 @@ export default function HomePage() {
             <div className="space-y-6">
               <h1
                 id="heroTitle"
-                className="font-serif font-bold text-white leading-relaxed"
+                className="font-serif text-white leading-relaxed"
                 style={{ textShadow: "0 2px 8px rgba(0,0,0,.35)" }}
               >
                 {/* Mobile layout - more line breaks */}
@@ -658,9 +653,9 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-brand-beige/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
+            <h2 className="text-3xl md:text-4xl text-brand-dark-brown mb-4">
               <span className="font-serif">LANA WITH.</span>
-              <span className="japanese-text">のこだわり</span>
+              <span className="japanese-text font-heading-jp">のこだわり</span>
             </h2>
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-8">
               <iframe
@@ -679,17 +674,19 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                 <Tag className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">商品名へのこだわり</h3>
+              <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">🏷 選びやすさへの工夫</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
-                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text whitespace-pre-line"
                   style={{ color: "#4B2E23" }}
                 >
-                  素材や味がひと目で伝わるように工夫した名前。
-                  <br />
-                  「見て食べたい」口にして「想像以上においしい」
-                  <br />
-                  と感じてもらえることを目指しています。
+                  {`見ただけで、おいしさが伝わるように。
+
+LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしています。
+
+選ぶ時間も楽しんでいただけるように。
+
+商品を手に取る前から、おいしさを想像できるネーミングを心がけています。`}
                 </p>
               </div>
             </div>
@@ -698,7 +695,7 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                 <Hand className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">細部までの手仕事</h3>
+              <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">細部までの手仕事</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
                   className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
@@ -717,7 +714,7 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
                 <Star className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="japanese-text text-xl font-bold text-brand-dark-brown">特別で日常に寄り添う</h3>
+              <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">特別で日常に寄り添う</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
                   className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
@@ -861,38 +858,68 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {/* Card 1: ブランドストーリー */}
+            {/* Card 1: LANA WITH.のはじまり */}
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
                 <Heart className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-semibold text-stone-800">ブランドストーリー</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">🏷️ LANA WITH.のはじまり</h3>
               </div>
-              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
-                LANA WITH.
-                の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
+                {`2021年7月19日。
+
+ふたりで開催したコラボイベントをきっかけに、LANA WITH.は生まれました。
+
+はじまりは、ひとつのオートミールクッキー。
+
+私たちが届けたいのは、ただの商品ではありません。
+
+食べた瞬間の香りや味わい、誰かと過ごした時間。
+
+その時の気持ちまで、記憶として残るものをつくりたい。
+
+LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るおいしさをお届けします。`}
               </p>
             </div>
 
-            {/* Card 2: 商品名へのこだわり */}
+            {/* Card 2: 選びやすさへの工夫 */}
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
                 <Tag className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-semibold text-stone-800">商品名へのこだわり</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">🏷 選びやすさへの工夫</h3>
               </div>
-              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
-                LANA WITH.
-                の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
+                {`見ただけで、おいしさが伝わるように。
+
+LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしています。
+
+選ぶ時間も楽しんでいただけるように。
+
+商品を手に取る前から、おいしさを想像できるネーミングを心がけています。`}
               </p>
             </div>
 
-            {/* Card 3: 開発背景 */}
+            {/* Card 3: グラノーラが生まれた理由 */}
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6 md:col-span-2">
               <div className="flex items-center mb-2">
                 <Sparkles className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-semibold text-stone-800">開発背景</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">🏷️ グラノーラが生まれた理由</h3>
               </div>
-              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text">
-                「日常的なグラノーラではない、特別なグラノーラ」を目指し、自家製粉オートミールやナッツを手作業で刻み、香りや焼き加減にこだわっています。大量生産にはない味わいを実現し、"特別だけど身近に置きたくなる"味わいを届けています。
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
+                {`自由な食べ方ができるグラノーラに魅力を感じて。
+
+そのままはもちろん、ヨーグルトやアイスに添えたり、気分や暮らしに合わせて楽しめるグラノーラ。
+
+決まった食べ方にとらわれず、自由に味わえるところに私たちらしさを感じ、オリジナル商品の開発を始めました。
+
+袋を開けた瞬間に広がる香り。
+
+噛むほどに増す素材の旨み。
+
+何度も試作を重ねながら、素材本来の味わいを大切にしたグラノーラを目指しています。
+
+毎日の朝食にも、ご褒美のおやつにも。
+
+暮らしの中で自然と手に取っていただける存在になれたら嬉しいです。`}
               </p>
             </div>
           </div>
@@ -903,7 +930,7 @@ export default function HomePage() {
       <section className="py-20" style={{ backgroundColor: "#EADBC8" }}>
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-4" style={{ color: "#4B2E23" }}>
+            <h2 className="font-serif text-3xl md:text-4xl mb-4" style={{ color: "#4B2E23" }}>
               with 私たちと一緒に
             </h2>
             <p className="text-lg mb-8" style={{ color: "#4B2E23" }}>
@@ -915,10 +942,10 @@ export default function HomePage() {
             {/* Product Images - 2 images side by side */}
             <div className="grid grid-cols-2 gap-6 mb-12">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                <img src="/granola-bowl-with-milk.jpg" alt="グラノーラボウル" className="w-full h-full object-cover" />
+                <img src="/images/products/granola-lana-bowl.jpg" alt="グラノーラボウル" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                <img src="/matcha-granola-parfait.png" alt="抹茶パフェ" className="w-full h-full object-cover" />
+                <img src="/images/products/granola-matcha-bowl.jpg" alt="抹茶グラノーラボウル" className="w-full h-full object-cover" />
               </div>
             </div>
 
@@ -971,7 +998,7 @@ export default function HomePage() {
       <section id="access" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl text-brand-dark-brown mb-4">
               アクセス / 店舗情報
             </h2>
           </div>
@@ -1011,7 +1038,7 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-brand-mocha to-brand-dark-brown">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
             今すぐ特別な朝食を始めませんか？
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto japanese-text">
@@ -1031,7 +1058,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
-              <div className="font-serif text-2xl font-bold">LANA WITH.</div>
+              <div className="font-serif text-2xl">LANA WITH.</div>
               <p className="text-white/80 japanese-text">ラナウィズ</p>
               <p className="text-white/70 japanese-text">ハンドメイド グラノーラ専門店</p>
               <div className="flex space-x-4">
@@ -1055,7 +1082,7 @@ export default function HomePage() {
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-serif text-lg font-semibold">会社情報</h3>
+              <h3 className="font-serif text-lg">会社情報</h3>
               <ul className="space-y-2 text-white/70 japanese-text">
                 <li>
                   <a href="#" className="hover:text-white transition-colors">

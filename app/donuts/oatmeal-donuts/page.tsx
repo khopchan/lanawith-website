@@ -11,7 +11,7 @@ export default function OatmealDonutsDetailPage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <a
             href="/"
-            className="font-serif text-2xl font-bold text-brand-dark-brown hover:text-brand-mocha transition-colors"
+            className="font-serif text-2xl text-brand-dark-brown hover:text-brand-mocha transition-colors"
           >
             LANA WITH.
           </a>
@@ -50,23 +50,23 @@ export default function OatmealDonutsDetailPage() {
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
                   <img
-                    src="/oatmeal-donuts-gift-box.png"
+                    src="/images/products/donut-all.jpg"
                     alt="オートミール焼きドーナツ６個入り（４種類セット）"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="grid grid-cols-4 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/plain-oatmeal-donut.png" alt="プレーン" className="w-full h-full object-cover" />
+                    <img src="/images/products/donut-plain.jpg" alt="プレーン" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/cocoa-oatmeal-donut.png" alt="ココア" className="w-full h-full object-cover" />
+                    <img src="/images/products/donut-chocolate.jpg" alt="ココア" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/matcha-oatmeal-donut.png" alt="西尾抹茶" className="w-full h-full object-cover" />
+                    <img src="/images/products/donut-matcha.jpg" alt="西尾抹茶" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/tea-oatmeal-donut.png" alt="紅茶" className="w-full h-full object-cover" />
+                    <img src="/images/products/donut-tea.jpg" alt="紅茶" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function OatmealDonutsDetailPage() {
               {/* Product Info */}
               <div className="space-y-6">
                 <div>
-                  <h1 className="font-serif text-3xl md:text-4xl font-bold text-brand-dark-brown mb-4">
+                  <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-dark-brown mb-4">
                     オートミール焼きドーナツ６個入り（４種類セット）
                   </h1>
                   <p className="text-xl text-brand-mocha font-semibold mb-2">2,400円（税込）</p>
@@ -82,7 +82,7 @@ export default function OatmealDonutsDetailPage() {
                 </div>
 
                 <div className="bg-brand-beige/30 rounded-xl p-6">
-                  <h3 className="font-serif text-lg font-bold text-brand-dark-brown mb-3">セット内容</h3>
+                  <h3 className="font-heading-jp text-lg text-brand-dark-brown mb-3">セット内容</h3>
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <div className="flex items-center space-x-2">
                       <div className="w-3 h-3 bg-yellow-200 rounded-full"></div>
@@ -199,7 +199,7 @@ export default function OatmealDonutsDetailPage() {
       {/* Footer */}
       <footer className="bg-brand-dark-brown text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <div className="font-serif text-2xl font-bold mb-4">LANA WITH.</div>
+          <div className="font-serif text-2xl mb-4">LANA WITH.</div>
           <p className="text-white/70 japanese-text mb-8">ハンドメイド グラノーラ専門店</p>
           <div className="space-y-2 text-white/60 japanese-text">
             <p>&copy; 2025 LANA WITH. All rights reserved.</p>

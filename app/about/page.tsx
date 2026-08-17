@@ -16,7 +16,7 @@ export default function AboutPage() {
             <ArrowLeft size={16} />
             ホームに戻る
           </Link>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">About LANA WITH.</h1>
+          <h1 className="text-4xl md:text-5xl font-serif mb-4">About LANA WITH.</h1>
           <p className="text-lg md:text-xl text-[#EADBC8] leading-relaxed">おいしいを、もっと自由に。</p>
         </div>
       </div>
@@ -27,14 +27,23 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Cherry className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23]">ブランドストーリー</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">🏷️ LANA WITH.のはじまり</h2>
           </div>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
-            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] mb-4">
-              幼なじみのふたりが営むグラノーラ専門店。「おいしいを、もっと自由に。」をコンセプトに、自分へのごほうびにも、贈り物にも選ばれる特別なお菓子を提供しています。
-            </p>
-            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] italic">
-              「ひとつはじぶん。もうひとつはあなたに。」――温かくやさしいおいしさを届けます。
+            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
+              {`2021年7月19日。
+
+ふたりで開催したコラボイベントをきっかけに、LANA WITH.は生まれました。
+
+はじまりは、ひとつのオートミールクッキー。
+
+私たちが届けたいのは、ただの商品ではありません。
+
+食べた瞬間の香りや味わい、誰かと過ごした時間。
+
+その時の気持ちまで、記憶として残るものをつくりたい。
+
+LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るおいしさをお届けします。`}
             </p>
           </div>
         </section>
@@ -43,12 +52,17 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Leaf className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23]">商品名へのこだわり</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">🏷 選びやすさへの工夫</h2>
           </div>
           <div className="bg-[#EADBC8]/20 rounded-2xl p-6 md:p-8">
-            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23]">
-              LANA
-              WITH.の商品名は、素材や味がひと目で伝わるよう工夫しています。見て"食べたい"、口にして"想像以上においしい"を目指しています。
+            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
+              {`見ただけで、おいしさが伝わるように。
+
+LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしています。
+
+選ぶ時間も楽しんでいただけるように。
+
+商品を手に取る前から、おいしさを想像できるネーミングを心がけています。`}
             </p>
           </div>
         </section>
@@ -57,28 +71,42 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Sprout className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23]">開発背景</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">🏷️ グラノーラが生まれた理由</h2>
           </div>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
-            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23]">
-              「日常的なグラノーラではない、特別なグラノーラ」を目指し、自家製粉オートミールやナッツを手作業で刻み、香りや焼き加減にこだわっています。大量生産にはない味わいを実現し、"特別だけど身近に置きたくなる"味わいを届けています。
+            <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
+              {`自由な食べ方ができるグラノーラに魅力を感じて。
+
+そのままはもちろん、ヨーグルトやアイスに添えたり、気分や暮らしに合わせて楽しめるグラノーラ。
+
+決まった食べ方にとらわれず、自由に味わえるところに私たちらしさを感じ、オリジナル商品の開発を始めました。
+
+袋を開けた瞬間に広がる香り。
+
+噛むほどに増す素材の旨み。
+
+何度も試作を重ねながら、素材本来の味わいを大切にしたグラノーラを目指しています。
+
+毎日の朝食にも、ご褒美のおやつにも。
+
+暮らしの中で自然と手に取っていただける存在になれたら嬉しいです。`}
             </p>
           </div>
         </section>
 
         {/* Founders Section */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-[#4B2E23] mb-8 text-center">創設者について</h2>
+          <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23] mb-8 text-center">創設者について</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#EADBC8]/30">
-              <h3 className="text-xl font-serif font-bold text-[#4B2E23] mb-2">mao</h3>
+              <h3 className="text-xl font-serif text-[#4B2E23] mb-2">mao</h3>
               <p className="text-[#C2A98D] mb-3">ヨガインストラクター</p>
               <p className="text-sm md:text-base leading-relaxed text-[#4B2E23]">
                 からだにやさしい食と暮らしを研究。焼き上がりの香りに合わせた朝ヨガが日課です。
               </p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-sm border border-[#EADBC8]/30">
-              <h3 className="text-xl font-serif font-bold text-[#4B2E23] mb-2">yuna</h3>
+              <h3 className="text-xl font-serif text-[#4B2E23] mb-2">yuna</h3>
               <p className="text-[#C2A98D] mb-3">ベーカー</p>
               <p className="text-sm md:text-base leading-relaxed text-[#4B2E23]">
                 素材の持ち味を生かした焼き菓子とグラノーラを担当。季節の食材を活かす配合が得意です。
