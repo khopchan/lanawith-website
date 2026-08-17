@@ -11,6 +11,7 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
+  ListChecks,
   Hand,
   Star,
   Heart,
@@ -704,6 +705,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             <div className="text-center space-y-6">
+              <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
+                <ListChecks className="w-8 h-8 text-brand-dark-brown" />
+              </div>
               <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">選びやすさへの工夫</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
