@@ -1,21 +1,18 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Lato, Noto_Sans_JP } from "next/font/google"
+import { Playfair_Display, Noto_Serif_JP } from "next/font/google"
 import "./globals.css"
 
-const lato = Lato({
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
-  style: ["normal", "italic"],
   display: "swap",
-  variable: "--font-lato",
+  variable: "--font-playfair",
 })
 
-const notoSansJP = Noto_Sans_JP({
+const notoSerifJP = Noto_Serif_JP({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
   display: "swap",
-  variable: "--font-noto-sans-jp",
+  variable: "--font-noto-serif-jp",
 })
 
 export const metadata: Metadata = {
@@ -31,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja" className={`${lato.variable} ${notoSansJP.variable} antialiased`}>
+    <html lang="ja" className={`${playfair.variable} ${notoSerifJP.variable} antialiased`}>
       <body>{children}</body>
     </html>
   )
