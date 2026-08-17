@@ -1080,9 +1080,9 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
           </p>
           <Button
             className="bg-white text-brand-dark-brown hover:bg-brand-milk-white px-8"
-            onClick={() => window.open("https://lanagranola.base.shop/", "_blank")}
+            onClick={() => window.open("https://lanagranola.base.shop/items/121689053", "_blank")}
           >
-            オンラインショップへ
+            選べるグラノーラ 定期便セット（4種から2袋）
           </Button>
         </div>
       </section>
