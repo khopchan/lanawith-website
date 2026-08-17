@@ -50,23 +50,23 @@ export default function OatmealDonutsDetailPage() {
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
                   <img
-                    src="/images/products/donut-all.jpg"
+                    src="/oatmeal-donuts-gift-box.png"
                     alt="オートミール焼きドーナツ６個入り（４種類セット）"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="grid grid-cols-4 gap-2">
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/images/products/donut-plain.jpg" alt="プレーン" className="w-full h-full object-cover" />
+                    <img src="/plain-oatmeal-donut.png" alt="プレーン" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/images/products/donut-chocolate.jpg" alt="ココア" className="w-full h-full object-cover" />
+                    <img src="/cocoa-oatmeal-donut.png" alt="ココア" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/images/products/donut-matcha.jpg" alt="西尾抹茶" className="w-full h-full object-cover" />
+                    <img src="/matcha-oatmeal-donut.png" alt="西尾抹茶" className="w-full h-full object-cover" />
                   </div>
                   <div className="aspect-square rounded-lg overflow-hidden">
-                    <img src="/images/products/donut-tea.jpg" alt="紅茶" className="w-full h-full object-cover" />
+                    <img src="/tea-oatmeal-donut.png" alt="紅茶" className="w-full h-full object-cover" />
                   </div>
                 </div>
               </div>

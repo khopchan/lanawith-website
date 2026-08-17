@@ -32,7 +32,7 @@ export default function DonutsPage() {
           <div className="max-w-4xl mx-auto">
             <div className="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden shadow-xl mb-12">
               <img
-                src="/images/products/donut-all.jpg"
+                src="/colorful-oatmeal-donuts.png"
                 alt="オートミール焼きドーナツ 4種類"
                 className="w-full h-full object-cover"
               />
@@ -61,7 +61,7 @@ export default function DonutsPage() {
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50 max-w-md mx-auto">
                 <div className="aspect-square">
                   <img
-                    src="/images/products/donut-all.jpg"
+                    src="/oatmeal-donuts-gift-box.png"
                     alt="オートミール焼きドーナツ６個入り（４種類セット）"
                     className="w-full h-full object-cover"
                   />

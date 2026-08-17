@@ -50,11 +50,7 @@ export default function ProductTabs(props: any) {
                     : "https://placehold.co/800x600?text=Lana+with"
                 }
                 alt={item.name}
-                className={`h-full w-full transition-transform duration-300 group-hover:scale-105 ${
-                  /-(large|mini|combo)\.jpg$/.test(item.imageUrl || "")
-                    ? "object-contain bg-[#faf8f5]"
-                    : "object-cover object-center"
-                }`}
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
             </div>

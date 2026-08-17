@@ -31,28 +31,33 @@ export default function HomePage() {
   const carouselSlides = [
     {
       id: 1,
-      imageUrl: "/images/products/granola-bowls-row.jpg",
-      alt: "LANA WITH. グラノーラ4種",
+      imageUrl:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_7705%202.jpg-iOsZBbqgi6mkXZ4zCEXycVMpzodqfQ.jpeg",
+      alt: "Lana with granola packages",
     },
     {
       id: 2,
-      imageUrl: "/images/products/granola-lana-combo.jpg",
-      alt: "LANAグラノーラ パッケージ",
+      imageUrl:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lana0120.jpg-resjDol3pmfqLhku3WM3TZfCT0yYWd.jpeg",
+      alt: "Lana with product styling",
     },
     {
       id: 3,
-      imageUrl: "/images/products/donut-all.jpg",
-      alt: "オートミール焼きドーナツ 4種類",
+      imageUrl:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4191%202.JPG-9eN4r0hGOB9zeKqZbI1J917enqtAVK.jpeg",
+      alt: "Granola bowl with milk",
     },
     {
       id: 4,
-      imageUrl: "/images/products/granola-chocolate-combo.jpg",
-      alt: "チョコグラノーラ パッケージ",
+      imageUrl:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Lana0094.jpg-2KdmgiffCWf9NzjHtcEOvLSZYXGueG.jpeg",
+      alt: "Stacked oatmeal donuts",
     },
     {
       id: 5,
-      imageUrl: "/images/products/granola-bowls-all.jpg",
-      alt: "LANA WITH. グラノーラボウル4種",
+      imageUrl:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/B3CFB952-9294-43D0-95FE-CA261650F30E.jpg-ROIObwnGj9IV6D2V3TGe7O58v9w0Eo.jpeg",
+      alt: "Granola close-up",
     },
   ]
 
@@ -231,7 +236,7 @@ export default function HomePage() {
               weight: "10枚",
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
-              imageUrl: "/images/slide-3.jpg",
+              imageUrl: "/images/products/cookie-chocolate.jpg",
             },
             {
               name: "抹茶クッキー（10枚）",
@@ -942,10 +947,10 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             {/* Product Images - 2 images side by side */}
             <div className="grid grid-cols-2 gap-6 mb-12">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                <img src="/images/products/granola-lana-bowl.jpg" alt="グラノーラボウル" className="w-full h-full object-cover" />
+                <img src="/granola-bowl-with-milk.jpg" alt="グラノーラボウル" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                <img src="/images/products/granola-matcha-bowl.jpg" alt="抹茶グラノーラボウル" className="w-full h-full object-cover" />
+                <img src="/matcha-granola-parfait.png" alt="抹茶パフェ" className="w-full h-full object-cover" />
               </div>
             </div>
 
