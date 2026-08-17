@@ -896,7 +896,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
                 <Heart className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">🏷️ LANA WITH.のはじまり</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">LANA WITH.のはじまり</h3>
               </div>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
                 {`2021年7月19日。
@@ -919,7 +919,7 @@ LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るお�
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
                 <Tag className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">🏷 選びやすさへの工夫</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">選びやすさへの工夫</h3>
               </div>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
                 {`見ただけで、おいしさが伝わるように。
@@ -936,7 +936,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6 md:col-span-2">
               <div className="flex items-center mb-2">
                 <Sparkles className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">🏷️ グラノーラが生まれた理由</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">LANAが生まれた理由</h3>
               </div>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
                 {`自由な食べ方ができるグラノーラに魅力を感じて。

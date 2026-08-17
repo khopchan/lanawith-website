@@ -75,8 +75,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-noto-serif-jp);
-  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
+  --font-serif: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
 
   /* Lana with Brand Colors */
   --color-brand-dark-brown: #4b2e23;
@@ -126,15 +126,34 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    font-synthesis: none;
+  }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
+    font-weight: 400;
   }
+}
+
+.font-serif {
+  font-family: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 /* Custom styles for Japanese text spacing */
 .japanese-text {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-style: normal;
   line-height: 1.8;
   letter-spacing: 0.05em;
+}
+
+.font-heading-jp {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* Brand color utilities */

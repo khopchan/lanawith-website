@@ -27,7 +27,7 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Cherry className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">🏷️ LANA WITH.のはじまり</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">LANA WITH.のはじまり</h2>
           </div>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
@@ -52,7 +52,7 @@ LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るお�
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Leaf className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">🏷 選びやすさへの工夫</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">選びやすさへの工夫</h2>
           </div>
           <div className="bg-[#EADBC8]/20 rounded-2xl p-6 md:p-8">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
@@ -71,7 +71,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Sprout className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">🏷️ グラノーラが生まれた理由</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">LANAが生まれた理由</h2>
           </div>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
