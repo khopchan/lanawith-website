@@ -11,7 +11,7 @@ import {
   X,
   ChevronLeft,
   ChevronRight,
-  Tag,
+  ListChecks,
   Hand,
   Star,
   Heart,
@@ -706,9 +706,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             <div className="text-center space-y-6">
               <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <Tag className="w-8 h-8 text-brand-dark-brown" />
+                <ListChecks className="w-8 h-8 text-brand-dark-brown" />
               </div>
-              <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">🏷 選びやすさへの工夫</h3>
+              <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">選びやすさへの工夫</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
                   className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text whitespace-pre-line"
@@ -918,7 +918,6 @@ LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るお�
             {/* Card 2: 選びやすさへの工夫 */}
             <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
               <div className="flex items-center mb-2">
-                <Tag className="w-6 h-6 text-amber-700/80 mr-2" />
                 <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">選びやすさへの工夫</h3>
               </div>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
