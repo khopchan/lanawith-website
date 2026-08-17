@@ -2,11 +2,11 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Heart, Leaf, Award } from "lucide-react"
+import { donutListingProducts } from "@/lib/donut-products"
 
 export default function DonutsPage() {
   return (
     <div className="min-h-screen bg-brand-milk-white">
-      {/* Header */}
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <a
@@ -26,7 +26,6 @@ export default function DonutsPage() {
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-brand-beige/30 to-brand-milk-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -45,51 +44,48 @@ export default function DonutsPage() {
               </h1>
               <p className="text-lg md:text-xl text-brand-dark-brown leading-relaxed max-w-3xl mx-auto japanese-text">
                 小さなお子様から大人の方まで一緒に楽しめる、新しいオートミールスイーツ。
-                <br />
-                現在は 4種類セット販売のみですが、今後フレーバーを増やす予定です。
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Product Grid */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-1 gap-8 justify-center">
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50 max-w-md mx-auto">
-                <div className="aspect-square">
-                  <img
-                    src="/oatmeal-donuts-gift-box.png"
-                    alt="オートミール焼きドーナツ６個入り（４種類セット）"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading-jp text-xl text-brand-dark-brown mb-3">
-                    オートミール焼きドーナツ６個入り（４種類セット）
-                  </h3>
-                  <p className="text-brand-dark-brown mb-4 japanese-text">プレーン / ココア / 西尾抹茶 / 紅茶</p>
-                  <div className="space-y-2 mb-6 text-sm text-brand-dark-brown">
-                    <p>価格：2,400円（税込）</p>
-                    <p>送料：全国一律 520円</p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {donutListingProducts.map((product) => (
+                <div
+                  key={product.slug}
+                  className="bg-white rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50"
+                >
+                  <div className="aspect-square">
+                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                   </div>
-                  <Button
-                    className="w-full bg-brand-mocha hover:bg-brand-dark-brown text-white"
-                    onClick={() => (window.location.href = "/donuts/oatmeal-donuts")}
-                  >
-                    詳細を見る
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </Button>
+                  <div className="p-6">
+                    <h3 className="font-heading-jp text-xl text-brand-dark-brown mb-3">{product.name}</h3>
+                    {product.flavors ? (
+                      <p className="text-brand-dark-brown mb-4 japanese-text">{product.flavors}</p>
+                    ) : null}
+                    <div className="space-y-2 mb-6 text-sm text-brand-dark-brown">
+                      {product.price ? <p>価格：{product.price}</p> : null}
+                      {product.shipping ? <p>{product.shipping}</p> : null}
+                    </div>
+                    <Button
+                      className="w-full bg-brand-mocha hover:bg-brand-dark-brown text-white"
+                      onClick={() => (window.location.href = product.href)}
+                    >
+                      詳細を見る
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </Button>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
       <section className="py-20 bg-brand-beige/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -129,7 +125,6 @@ export default function DonutsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-brand-mocha to-brand-dark-brown">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-heading-jp text-2xl md:text-3xl text-white mb-4">
@@ -147,7 +142,6 @@ export default function DonutsPage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-brand-dark-brown text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <div className="font-serif text-2xl mb-4">LANA WITH.</div>
