@@ -64,7 +64,7 @@ export const donutSetProduct: DonutProduct = {
   image: "/oatmeal-donuts-gift-box.png",
   href: "/donuts/oatmeal-donuts",
   price: "2,400円（税込）",
-  shipping: "送料：全国一律 520円",
+  shipping: "送料：全国一律1,200円",
   flavors: "プレーン / ココア / 西尾抹茶 / 紅茶",
   description:
     "小さなお子様から大人の方まで一緒に楽しめる、新しいオートミールスイーツです。栄養豊富なオートミールを使用し、4つの異なる味わいをお楽しみいただけます。",
