@@ -57,7 +57,9 @@ export default function CatalogProductDetail({ product }: { product: CatalogProd
               <div className="space-y-6">
                 <div>
                   <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-dark-brown mb-4">{product.name}</h1>
-                  <p className="text-xl text-brand-mocha font-semibold mb-2">{product.price}</p>
+                  {product.price ? (
+                    <p className="text-xl text-brand-mocha font-semibold mb-2">{product.price}</p>
+                  ) : null}
                   <p className="text-brand-dark-brown japanese-text mb-1">内容量：{product.weight}</p>
                   <p className="text-brand-dark-brown japanese-text">{product.shipping}</p>
                 </div>

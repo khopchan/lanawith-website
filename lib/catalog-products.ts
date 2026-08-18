@@ -1,4 +1,4 @@
-export type CatalogCategory = "granola" | "mini-granola" | "cookies"
+export type CatalogCategory = "granola" | "mini-granola" | "cookies" | "donuts"
 
 export type CatalogProduct = {
   slug: string
@@ -313,9 +313,119 @@ export const cookieProducts: CatalogProduct[] = [
   },
 ]
 
+const donutShippingSummary = "送料：全国一律 520円"
+
+const donutShippingInfo = `ご注文から3-5営業日以内に発送いたします。通常1週間以内にお届けできるよう努めております。
+
+冷蔵便（クール便）でお届けします。ドーナツは冷凍状態で届きます。解凍後10分程度でお召し上がりいただけます。
+
+送料は全国一律 520円です。詳しくはオンラインショップの購入画面でもご確認ください。
+
+食品のため、お客様都合による返品・交換は承っておりません。不良品や誤配送の場合は、到着後3日以内にご連絡ください。`
+
+const donutShelfLife =
+  "賞味期限：製造から2ヶ月 / 保存方法：要冷凍（−18℃以下）。解凍後は冷蔵保存せず、当日中にお召し上がりください。個包装なので、食べたい分だけ解凍できます。"
+
+const donutAllergy =
+  "小麦粉・卵・乳不使用。特定原材料8品目（えび・かに・小麦・そば・卵・乳・落花生・くるみ）は使用していません。同じ生産ラインで落花生・乳を使用したグラノーラを製造していますが、ドーナツ自体には含まれておりません。"
+
+const donutHowToEat =
+  "冷凍庫から出して約10分解凍してお召し上がりください。トースター600Wで30秒ほど温めると、よりふっくらします。コーヒーや紅茶、ミルクと相性がよく、朝食や午後のおやつ、来客時のお茶菓子にもおすすめです。あんこやホイップを添えるほか、レタスやハムチーズを挟んだサンドイッチ風にも楽しめます。"
+
+const donutBaseFeatures =
+  "油で揚げずに焼き上げたオートミールの焼きドーナツです。小麦粉・卵・乳製品不使用で、口当たりは軽く、甘さは控えめ。小さなお子様から大人の方まで一緒に楽しめます。"
+
+export const donutFlavorCatalogProducts: CatalogProduct[] = [
+  {
+    slug: "plain",
+    category: "donuts",
+    categoryLabel: "ドーナツ",
+    name: "オートミール焼きドーナツ プレーン 6個入り",
+    breadcrumb: "プレーン 6個入り",
+    image: "/plain-oatmeal-donut.png",
+    href: "/donuts/oatmeal-donuts/plain",
+    shopUrl: "https://lanagranola.base.shop/",
+    price: "",
+    shipping: donutShippingSummary,
+    weight: "6個入り（1個あたり約65g）",
+    features: donutBaseFeatures,
+    taste:
+      "オートミールの香ばしさとやさしい甘みをそのまま楽しめる定番の味です。シンプルで、スイーツとしてもお惣菜と一緒にも食べられます。",
+    ingredients: "オーツミルク、オートミール、米粉、メープルシロップ、甜菜糖、米油、ベーキングパウダー、食塩",
+    howToEat: donutHowToEat,
+    allergy: donutAllergy,
+    shelfLife: donutShelfLife,
+    shippingInfo: donutShippingInfo,
+  },
+  {
+    slug: "cocoa",
+    category: "donuts",
+    categoryLabel: "ドーナツ",
+    name: "オートミール焼きドーナツ ココア 6個入り",
+    breadcrumb: "ココア 6個入り",
+    image: "/cocoa-oatmeal-donut.png",
+    href: "/donuts/oatmeal-donuts/cocoa",
+    shopUrl: "https://lanagranola.base.shop/",
+    price: "",
+    shipping: donutShippingSummary,
+    weight: "6個入り（1個あたり約65g）",
+    features: donutBaseFeatures,
+    taste:
+      "純ココアのほろ苦さを活かし、甘さ控えめに仕上げた大人にも人気のフレーバーです。チョコが苦手な方でも食べやすい、軽やかな味わいです。",
+    ingredients: "オーツミルク、米粉、オートミール、甜菜糖、米油、メープルシロップ、純ココア、ベーキングパウダー、食塩",
+    howToEat: donutHowToEat,
+    allergy: donutAllergy,
+    shelfLife: donutShelfLife,
+    shippingInfo: donutShippingInfo,
+  },
+  {
+    slug: "matcha",
+    category: "donuts",
+    categoryLabel: "ドーナツ",
+    name: "オートミール焼きドーナツ 西尾抹茶 6個入り",
+    breadcrumb: "西尾抹茶 6個入り",
+    image: "/matcha-oatmeal-donut.png",
+    href: "/donuts/oatmeal-donuts/matcha",
+    shopUrl: "https://lanagranola.base.shop/",
+    price: "",
+    shipping: donutShippingSummary,
+    weight: "6個入り（1個あたり約65g）",
+    features: donutBaseFeatures,
+    taste:
+      "西尾産抹茶の穏やかな苦味と香りが広がる、後味すっきりの和テイストです。和菓子のような、洋菓子のような味わいです。",
+    ingredients: "オーツミルク、オートミール、米粉、メープルシロップ、甜菜糖、米油、ベーキングパウダー、西尾産抹茶、食塩",
+    howToEat: donutHowToEat,
+    allergy: donutAllergy,
+    shelfLife: donutShelfLife,
+    shippingInfo: donutShippingInfo,
+  },
+  {
+    slug: "tea",
+    category: "donuts",
+    categoryLabel: "ドーナツ",
+    name: "オートミール焼きドーナツ 紅茶 6個入り",
+    breadcrumb: "紅茶 6個入り",
+    image: "/tea-oatmeal-donut.png",
+    href: "/donuts/oatmeal-donuts/tea",
+    shopUrl: "https://lanagranola.base.shop/",
+    price: "",
+    shipping: donutShippingSummary,
+    weight: "6個入り（1個あたり約65g）",
+    features: donutBaseFeatures,
+    taste:
+      "紅茶の華やかな香りがふんわりと立つ、上品な味わいです。ミルクと合わせると、ミルクティーのような香りが広がります。",
+    ingredients: "オーツミルク、オートミール、米粉、メープルシロップ、甜菜糖、米油、ベーキングパウダー、紅茶、食塩",
+    howToEat: donutHowToEat,
+    allergy: donutAllergy,
+    shelfLife: donutShelfLife,
+    shippingInfo: donutShippingInfo,
+  },
+]
+
 export const granolaSlugs = granolaProducts.map((product) => product.slug)
 export const miniGranolaSlugs = miniGranolaProducts.map((product) => product.slug)
 export const cookieSlugs = cookieProducts.map((product) => product.slug)
+export const donutFlavorSlugs = donutFlavorCatalogProducts.map((product) => product.slug)
 
 export function getGranolaProduct(slug: string): CatalogProduct | undefined {
   return granolaProducts.find((product) => product.slug === slug)
@@ -327,4 +437,8 @@ export function getMiniGranolaProduct(slug: string): CatalogProduct | undefined 
 
 export function getCookieProduct(slug: string): CatalogProduct | undefined {
   return cookieProducts.find((product) => product.slug === slug)
+}
+
+export function getDonutFlavorCatalogProduct(slug: string): CatalogProduct | undefined {
+  return donutFlavorCatalogProducts.find((product) => product.slug === slug)
 }

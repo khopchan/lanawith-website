@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation"
-import DonutProductDetail from "@/components/donut-product-detail"
-import { donutFlavorIds, getDonutFlavor } from "@/lib/donut-products"
+import CatalogProductDetail from "@/components/catalog-product-detail"
+import { donutFlavorSlugs, getDonutFlavorCatalogProduct } from "@/lib/catalog-products"
 
 export function generateStaticParams() {
-  return donutFlavorIds.map((flavor) => ({ flavor }))
+  return donutFlavorSlugs.map((flavor) => ({ flavor }))
 }
 
 export default async function DonutFlavorPage({
@@ -12,10 +12,10 @@ export default async function DonutFlavorPage({
   params: Promise<{ flavor: string }>
 }) {
   const { flavor } = await params
-  const product = getDonutFlavor(flavor)
+  const product = getDonutFlavorCatalogProduct(flavor)
   if (!product) {
     notFound()
   }
 
-  return <DonutProductDetail product={product} />
+  return <CatalogProductDetail product={product} />
 }
