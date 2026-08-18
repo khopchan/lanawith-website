@@ -124,6 +124,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存を推奨",
               imageUrl: "/images/products/granola-lana-large.jpg",
+              href: "/granola/lana",
             },
             {
               name: "紅茶グラノーラ",
@@ -135,6 +136,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-tea-large.jpg",
+              href: "/granola/tea",
             },
             {
               name: "チョコグラノーラ",
@@ -145,6 +147,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-chocolate-large.jpg",
+              href: "/granola/chocolate",
             },
             {
               name: "抹茶グラノーラ",
@@ -155,6 +158,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-matcha-large.jpg",
+              href: "/granola/matcha",
             },
           ],
         },
@@ -171,6 +175,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-lana-mini.jpg",
+              href: "/mini-granola/lana",
             },
             {
               name: "紅茶グラノーラ",
@@ -181,6 +186,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-tea-mini.jpg",
+              href: "/mini-granola/tea",
             },
             {
               name: "チョコグラノーラ",
@@ -191,6 +197,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-chocolate-mini.jpg",
+              href: "/mini-granola/chocolate",
             },
             {
               name: "抹茶グラノーラ",
@@ -201,6 +208,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "開封後は冷凍保存推奨",
               imageUrl: "/images/products/granola-matcha-mini.jpg",
+              href: "/mini-granola/matcha",
             },
           ],
         },
@@ -217,6 +225,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
               imageUrl: "/images/products/cookie-plain.jpg",
+              href: "/cookies/granola",
             },
             {
               name: "紅茶クッキー（10枚）",
@@ -227,6 +236,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
               imageUrl: "/images/products/cookie-tea.jpg",
+              href: "/cookies/tea",
             },
             {
               name: "チョコクッキー（10枚）",
@@ -237,6 +247,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
               imageUrl: "/images/products/cookie-chocolate.jpg",
+              href: "/cookies/chocolate",
             },
             {
               name: "抹茶クッキー（10枚）",
@@ -247,6 +258,7 @@ export default function HomePage() {
               shelfLife: "製造日より3週間",
               storage: "冷暗所／開封後はお早めに",
               imageUrl: "/images/products/cookie-matcha.jpg",
+              href: "/cookies/matcha",
             },
           ],
         },
