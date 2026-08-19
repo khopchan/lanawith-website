@@ -101,7 +101,7 @@ export default function CatalogProductDetail({ product }: { product: CatalogProd
                   <div className="flex items-start space-x-3">
                     <Clock className="w-5 h-5 text-brand-mocha mt-1 shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-brand-dark-brown">賞味期限・保存方法</h4>
+                      <h4 className="font-semibold text-brand-dark-brown">消費期限・保存方法</h4>
                       <p className="text-sm text-brand-dark-brown japanese-text leading-relaxed">{product.shelfLife}</p>
                     </div>
                   </div>
