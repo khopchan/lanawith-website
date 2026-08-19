@@ -27,23 +27,15 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Cherry className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">LANA WITH.のはじまり</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp font-semibold text-[#4B2E23]">LANA WITH.のはじまり</h2>
           </div>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
-              {`2021年7月19日。
-
-ふたりで開催したコラボイベントをきっかけに、LANA WITH.は生まれました。
+              {`2021年の夏、ふたりの小さなコラボからLANA WITH.は始まりました。
 
 はじまりは、ひとつのオートミールクッキー。
 
-私たちが届けたいのは、ただの商品ではありません。
-
-食べた瞬間の香りや味わい、誰かと過ごした時間。
-
-その時の気持ちまで、記憶として残るものをつくりたい。
-
-LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るおいしさをお届けします。`}
+素材の香りとやさしい甘さが、暮らしにすっとなじむおいしさを目指しています。`}
             </p>
           </div>
         </section>
@@ -52,17 +44,15 @@ LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るお�
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Leaf className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">選びやすさへの工夫</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp font-semibold text-[#4B2E23]">選びやすさへの工夫</h2>
           </div>
           <div className="bg-[#EADBC8]/20 rounded-2xl p-6 md:p-8">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
-              {`見ただけで、おいしさが伝わるように。
+              {`名前を見ただけで、味が思い浮かぶこと。
 
-LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしています。
+LANA WITH.は、素材や食感が伝わるシンプルなネーミングを大切にしています。
 
-選ぶ時間も楽しんでいただけるように。
-
-商品を手に取る前から、おいしさを想像できるネーミングを心がけています。`}
+選ぶ時間まで、ちょっと楽しくなるように。`}
             </p>
           </div>
         </section>
@@ -71,25 +61,15 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
         <section className="mb-16">
           <div className="flex items-center gap-3 mb-6">
             <Sprout className="text-[#4B2E23]" size={24} />
-            <h2 className="text-2xl md:text-3xl font-heading-jp text-[#4B2E23]">LANAが生まれた理由</h2>
+            <h2 className="text-2xl md:text-3xl font-heading-jp font-semibold text-[#4B2E23]">LANAが生まれた理由</h2>
           </div>
           <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-[#EADBC8]/30">
             <p className="text-base md:text-lg leading-relaxed text-[#4B2E23] whitespace-pre-line">
-              {`自由な食べ方ができるグラノーラに魅力を感じて。
+              {`そのままでも、ヨーグルトでも、おやつにも。
 
-そのままはもちろん、ヨーグルトやアイスに添えたり、気分や暮らしに合わせて楽しめるグラノーラ。
+食べ方を決めすぎないグラノーラに、私たちらしさを感じました。
 
-決まった食べ方にとらわれず、自由に味わえるところに私たちらしさを感じ、オリジナル商品の開発を始めました。
-
-袋を開けた瞬間に広がる香り。
-
-噛むほどに増す素材の旨み。
-
-何度も試作を重ねながら、素材本来の味わいを大切にしたグラノーラを目指しています。
-
-毎日の朝食にも、ご褒美のおやつにも。
-
-暮らしの中で自然と手に取っていただける存在になれたら嬉しいです。`}
+「おいしいを、もっと自由に。」の気持ちをのせて、素材の味わいをまっすぐ届けています。`}
             </p>
           </div>
         </section>
