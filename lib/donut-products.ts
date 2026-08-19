@@ -14,6 +14,7 @@ export type DonutProduct = {
   name: string
   breadcrumb: string
   image: string
+  images?: string[]
   href: string
   price?: string
   shipping?: string
@@ -33,7 +34,12 @@ export const donutFlavorProducts: DonutProduct[] = [
     slug: "plain",
     name: "オートミール焼きドーナツ プレーン 6個入り",
     breadcrumb: "プレーン 6個入り",
-    image: "/plain-oatmeal-donut.png",
+    image: "/images/products/base/donut-plain-1.jpg",
+    images: [
+      "/images/products/base/donut-plain-1.jpg",
+      "/images/products/base/donut-plain-2.jpg",
+      "/images/products/base/donut-plain-3.jpg",
+    ],
     href: "/donuts/oatmeal-donuts/plain",
     price: "2,400円（税込）",
     description: "オートミールの香ばしさとやさしい甘みが楽しめる定番の味。",
@@ -42,7 +48,12 @@ export const donutFlavorProducts: DonutProduct[] = [
     slug: "cocoa",
     name: "オートミール焼きドーナツ ココア 6個入り",
     breadcrumb: "ココア 6個入り",
-    image: "/cocoa-oatmeal-donut.png",
+    image: "/images/products/base/donut-cocoa-1.jpg",
+    images: [
+      "/images/products/base/donut-cocoa-1.jpg",
+      "/images/products/base/donut-cocoa-2.jpg",
+      "/images/products/base/donut-cocoa-3.jpg",
+    ],
     href: "/donuts/oatmeal-donuts/cocoa",
     price: "2,400円（税込）",
     description: "純ココアのほろ苦さを活かした、甘さ控えめの味わい。",
@@ -51,7 +62,12 @@ export const donutFlavorProducts: DonutProduct[] = [
     slug: "matcha",
     name: "オートミール焼きドーナツ 西尾抹茶 6個入り",
     breadcrumb: "西尾抹茶 6個入り",
-    image: "/matcha-oatmeal-donut.png",
+    image: "/images/products/base/donut-matcha-1.jpg",
+    images: [
+      "/images/products/base/donut-matcha-1.jpg",
+      "/images/products/base/donut-matcha-2.jpg",
+      "/images/products/base/donut-matcha-3.jpg",
+    ],
     href: "/donuts/oatmeal-donuts/matcha",
     price: "2,400円（税込）",
     description: "抹茶のほろ苦さと香りが広がる、和テイストの味わい。",
@@ -60,7 +76,12 @@ export const donutFlavorProducts: DonutProduct[] = [
     slug: "tea",
     name: "オートミール焼きドーナツ 紅茶 6個入り",
     breadcrumb: "紅茶 6個入り",
-    image: "/tea-oatmeal-donut.png",
+    image: "/images/products/base/donut-tea-1.jpg",
+    images: [
+      "/images/products/base/donut-tea-1.jpg",
+      "/images/products/base/donut-tea-2.jpg",
+      "/images/products/base/donut-tea-3.jpg",
+    ],
     href: "/donuts/oatmeal-donuts/tea",
     price: "2,400円（税込）",
     description: "紅茶の華やかな香りがふんわり広がる上品な味わい。",
@@ -71,7 +92,14 @@ export const donutSetProduct: DonutProduct = {
   slug: "set",
   name: "オートミール焼きドーナツ 4種類セット 6個入り",
   breadcrumb: "オートミール焼きドーナツ６個入り",
-  image: "/oatmeal-donuts-gift-box.png",
+  image: "/images/products/base/donut-set-1.jpg",
+  images: [
+    "/images/products/base/donut-set-1.jpg",
+    "/images/products/base/donut-set-2.jpg",
+    "/images/products/base/donut-set-3.jpg",
+    "/images/products/base/donut-set-4.jpg",
+    "/images/products/base/donut-set-5.jpg",
+  ],
   href: "/donuts/oatmeal-donuts",
   price: "2,400円（税込）",
   shopUrl: "https://lanagranola.base.shop/items/101173991",

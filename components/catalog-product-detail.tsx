@@ -1,10 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Package, Clock, AlertTriangle, Truck, ExternalLink } from "lucide-react"
 import type { CatalogProduct } from "@/lib/catalog-products"
 
 export default function CatalogProductDetail({ product }: { product: CatalogProduct }) {
+  const galleryImages = product.images && product.images.length > 0 ? product.images : [product.image]
+  const [activeImage, setActiveImage] = useState(0)
+  const mainImage = galleryImages[Math.min(activeImage, galleryImages.length - 1)]
+
   return (
     <div className="min-h-screen bg-brand-milk-white">
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
@@ -47,11 +52,36 @@ export default function CatalogProductDetail({ product }: { product: CatalogProd
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl bg-white">
                   <img
-                    src={product.image}
+                    src={mainImage}
                     alt={product.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
+                {galleryImages.length > 1 ? (
+                  <div className="grid grid-cols-4 gap-2">
+                    {galleryImages.map((src, idx) => (
+                      <button
+                        key={src}
+                        type="button"
+                        onClick={() => setActiveImage(idx)}
+                        aria-label={`${product.name} の画像 ${idx + 1}`}
+                        aria-current={idx === activeImage}
+                        className={`aspect-square rounded-lg overflow-hidden bg-white border-2 transition ${
+                          idx === activeImage
+                            ? "border-brand-mocha"
+                            : "border-transparent hover:border-brand-beige"
+                        }`}
+                      >
+                        <img
+                          src={src}
+                          alt={`${product.name} 画像${idx + 1}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
               </div>
 
               <div className="space-y-6">

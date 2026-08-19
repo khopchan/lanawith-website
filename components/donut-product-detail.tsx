@@ -1,10 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Package, Clock, AlertTriangle, Truck, ExternalLink } from "lucide-react"
 import type { DonutProduct } from "@/lib/donut-products"
 
 export default function DonutProductDetail({ product }: { product: DonutProduct }) {
+  const galleryImages = product.images && product.images.length > 0 ? product.images : [product.image]
+  const [activeImage, setActiveImage] = useState(0)
+  const mainImage = galleryImages[Math.min(activeImage, galleryImages.length - 1)]
+
   return (
     <div className="min-h-screen bg-brand-milk-white">
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
@@ -42,15 +47,31 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-4">
-                <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                <div className="aspect-square rounded-2xl overflow-hidden shadow-xl bg-white">
+                  <img src={mainImage} alt={product.name} className="w-full h-full object-cover" />
                 </div>
-                {product.thumbnails && product.thumbnails.length > 0 ? (
+                {galleryImages.length > 1 ? (
                   <div className="grid grid-cols-4 gap-2">
-                    {product.thumbnails.map((thumb) => (
-                      <div key={thumb.alt} className="aspect-square rounded-lg overflow-hidden">
-                        <img src={thumb.src} alt={thumb.alt} className="w-full h-full object-cover" />
-                      </div>
+                    {galleryImages.map((src, idx) => (
+                      <button
+                        key={src}
+                        type="button"
+                        onClick={() => setActiveImage(idx)}
+                        aria-label={`${product.name} の画像 ${idx + 1}`}
+                        aria-current={idx === activeImage}
+                        className={`aspect-square rounded-lg overflow-hidden bg-white border-2 transition ${
+                          idx === activeImage
+                            ? "border-brand-mocha"
+                            : "border-transparent hover:border-brand-beige"
+                        }`}
+                      >
+                        <img
+                          src={src}
+                          alt={`${product.name} 画像${idx + 1}`}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </button>
                     ))}
                   </div>
                 ) : null}
