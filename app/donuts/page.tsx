@@ -1,8 +1,17 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Heart, Leaf, Award } from "lucide-react"
+import { Heart, Leaf, Award } from "lucide-react"
+import { ProductCardGrid, type ProductCardItem } from "@/components/product-card"
 import { donutListingProducts } from "@/lib/donut-products"
+
+const donutListingCards: ProductCardItem[] = donutListingProducts.map((product) => ({
+  name: product.name,
+  imageUrl: product.image,
+  description: product.description,
+  price: product.price,
+  href: product.href,
+}))
 
 export default function DonutsPage() {
   return (
@@ -52,37 +61,7 @@ export default function DonutsPage() {
 
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {donutListingProducts.map((product) => (
-                <div
-                  key={product.slug}
-                  className="bg-white rounded-2xl shadow-lg overflow-hidden border border-brand-beige/50"
-                >
-                  <div className="aspect-square">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-heading-jp text-xl text-brand-dark-brown mb-3">{product.name}</h3>
-                    {product.flavors ? (
-                      <p className="text-brand-dark-brown mb-4 japanese-text">{product.flavors}</p>
-                    ) : null}
-                    <div className="space-y-2 mb-6 text-sm text-brand-dark-brown">
-                      {product.price ? <p>価格：{product.price}</p> : null}
-                      {product.shipping ? <p>{product.shipping}</p> : null}
-                    </div>
-                    <Button
-                      className="w-full bg-brand-mocha hover:bg-brand-dark-brown text-white"
-                      onClick={() => (window.location.href = product.href)}
-                    >
-                      詳細を見る
-                      <ArrowRight className="w-4 h-4 ml-2" />
-                    </Button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ProductCardGrid items={donutListingCards} />
         </div>
       </section>
 
