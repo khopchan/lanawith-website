@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowLeft, Package, Clock, AlertTriangle, Truck } from "lucide-react"
+import { ArrowLeft, Package, Clock, AlertTriangle, Truck, ExternalLink } from "lucide-react"
 import type { DonutProduct } from "@/lib/donut-products"
 
 export default function DonutProductDetail({ product }: { product: DonutProduct }) {
@@ -61,6 +61,9 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                   <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-dark-brown mb-4">{product.name}</h1>
                   {product.price ? (
                     <p className="text-xl text-brand-mocha font-semibold mb-2">{product.price}</p>
+                  ) : null}
+                  {product.weight ? (
+                    <p className="text-brand-dark-brown japanese-text mb-1">内容量：{product.weight}</p>
                   ) : null}
                   {product.shipping ? (
                     <p className="text-brand-dark-brown japanese-text">{product.shipping}</p>
@@ -128,6 +131,18 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                 </div>
 
                 <div className="space-y-3">
+                  {product.shopUrl ? (
+                    <Button
+                      asChild
+                      className="w-full bg-brand-mocha hover:bg-brand-dark-brown text-white py-3 flex items-center justify-center gap-2"
+                    >
+                      <a href={product.shopUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4" />
+                        オンラインショップで購入する
+                      </a>
+                    </Button>
+                  ) : null}
+
                   <Button
                     className="w-full bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center gap-2"
                     onClick={() => window.open("https://lin.ee/bxHhY8L", "_blank")}

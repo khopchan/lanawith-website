@@ -313,24 +313,25 @@ export const cookieProducts: CatalogProduct[] = [
   },
 ]
 
-const donutShippingSummary = "送料：全国一律 520円"
+const donutShippingSummary =
+  "送料：クール便（冷凍便）でお届け。配送先の地域・サイズにより異なります（5,000円以上のご購入で国内送料無料）"
 
-const donutShippingInfo = `ご注文から3-5営業日以内に発送いたします。通常1週間以内にお届けできるよう努めております。
+const donutShippingInfo = `ご注文（お支払い確定）後、順次発送いたします。毎週月曜日までのご注文で、最短翌日発送となる場合がございます。
 
-冷蔵便（クール便）でお届けします。ドーナツは冷凍状態で届きます。解凍後10分程度でお召し上がりいただけます。
+クール宅急便（冷凍便）でお届けします。ドーナツは冷凍状態で届きます。
 
-送料は全国一律 520円です。詳しくはオンラインショップの購入画面でもご確認ください。
+送料は配送先の地域・サイズにより異なります（クール宅急便）。日本国内は5,000円以上のご購入で送料無料です。詳しくはオンラインショップの購入画面でご確認ください。
 
-食品のため、お客様都合による返品・交換は承っておりません。不良品や誤配送の場合は、到着後3日以内にご連絡ください。`
+食品のため、お客様都合による返品・交換は承っておりません。不良品や誤配送の場合はご連絡ください。`
 
 const donutShelfLife =
-  "賞味期限：製造から2ヶ月 / 保存方法：要冷凍（−18℃以下）。解凍後は冷蔵保存せず、当日中にお召し上がりください。個包装なので、食べたい分だけ解凍できます。"
+  "消費期限：冷凍状態で製造日より2ヶ月（解凍後はその日中にお召し上がりください） / 保存方法：−20℃以下の冷凍庫で保存してください。個包装なので、食べたい分だけ解凍できます。"
 
 const donutAllergy =
-  "小麦粉・卵・乳不使用。特定原材料8品目（えび・かに・小麦・そば・卵・乳・落花生・くるみ）は使用していません。同じ生産ラインで落花生・乳を使用したグラノーラを製造していますが、ドーナツ自体には含まれておりません。"
+  "アレルギー物質を含む原材料：該当なし（小麦粉・卵・乳製品不使用）。※同じ製造室で乳製品・落花生・ナッツ類を使用した製品を製造しています。"
 
 const donutHowToEat =
-  "冷凍庫から出して約10分解凍してお召し上がりください。トースター600Wで30秒ほど温めると、よりふっくらします。コーヒーや紅茶、ミルクと相性がよく、朝食や午後のおやつ、来客時のお茶菓子にもおすすめです。あんこやホイップを添えるほか、レタスやハムチーズを挟んだサンドイッチ風にも楽しめます。"
+  "個包装のまま、室温で1時間ほど解凍すると、しっとり・ふんわりとした食感に戻ります。コーヒーや紅茶、ミルクと相性がよく、朝食や午後のおやつ、来客時のお茶菓子にもおすすめです。あんこやホイップを添えたり、レタスやハムチーズを挟んでサンド風にも楽しめます。"
 
 const donutBaseFeatures =
   "油で揚げずに焼き上げたオートミールの焼きドーナツです。小麦粉・卵・乳製品不使用で、口当たりは軽く、甘さは控えめ。小さなお子様から大人の方まで一緒に楽しめます。"
@@ -344,10 +345,10 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     breadcrumb: "プレーン 6個入り",
     image: "/plain-oatmeal-donut.png",
     href: "/donuts/oatmeal-donuts/plain",
-    shopUrl: "https://lanagranola.base.shop/",
-    price: "",
+    shopUrl: "https://lanagranola.base.shop/items/133964018",
+    price: "2,400円（税込）",
     shipping: donutShippingSummary,
-    weight: "6個入り（1個あたり約65g）",
+    weight: "65g×6個",
     features: donutBaseFeatures,
     taste:
       "オートミールの香ばしさとやさしい甘みをそのまま楽しめる定番の味です。シンプルで、スイーツとしてもお惣菜と一緒にも食べられます。",
@@ -365,14 +366,14 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     breadcrumb: "ココア 6個入り",
     image: "/cocoa-oatmeal-donut.png",
     href: "/donuts/oatmeal-donuts/cocoa",
-    shopUrl: "https://lanagranola.base.shop/",
-    price: "",
+    shopUrl: "https://lanagranola.base.shop/items/133545169",
+    price: "2,400円（税込）",
     shipping: donutShippingSummary,
-    weight: "6個入り（1個あたり約65g）",
+    weight: "65g×6個",
     features: donutBaseFeatures,
     taste:
       "純ココアのほろ苦さを活かし、甘さ控えめに仕上げた大人にも人気のフレーバーです。チョコが苦手な方でも食べやすい、軽やかな味わいです。",
-    ingredients: "オーツミルク、米粉、オートミール、甜菜糖、米油、メープルシロップ、純ココア、ベーキングパウダー、食塩",
+    ingredients: "オーツミルク、オートミール、米粉、メープルシロップ、甜菜糖、米油、ベーキングパウダー、純ココア、食塩",
     howToEat: donutHowToEat,
     allergy: donutAllergy,
     shelfLife: donutShelfLife,
@@ -386,14 +387,14 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     breadcrumb: "西尾抹茶 6個入り",
     image: "/matcha-oatmeal-donut.png",
     href: "/donuts/oatmeal-donuts/matcha",
-    shopUrl: "https://lanagranola.base.shop/",
-    price: "",
+    shopUrl: "https://lanagranola.base.shop/items/133964069",
+    price: "2,400円（税込）",
     shipping: donutShippingSummary,
-    weight: "6個入り（1個あたり約65g）",
+    weight: "65g×6個",
     features: donutBaseFeatures,
     taste:
-      "西尾産抹茶の穏やかな苦味と香りが広がる、後味すっきりの和テイストです。和菓子のような、洋菓子のような味わいです。",
-    ingredients: "オーツミルク、オートミール、米粉、メープルシロップ、甜菜糖、米油、ベーキングパウダー、西尾産抹茶、食塩",
+      "抹茶の穏やかな苦味と香りが広がる、後味すっきりの和テイストです。和菓子のような、洋菓子のような味わいです。",
+    ingredients: "オーツミルク、オートミール、米粉、メープルシロップ、甜菜糖、米油、ベーキングパウダー、抹茶パウダー、食塩",
     howToEat: donutHowToEat,
     allergy: donutAllergy,
     shelfLife: donutShelfLife,
@@ -407,10 +408,10 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     breadcrumb: "紅茶 6個入り",
     image: "/tea-oatmeal-donut.png",
     href: "/donuts/oatmeal-donuts/tea",
-    shopUrl: "https://lanagranola.base.shop/",
-    price: "",
+    shopUrl: "https://lanagranola.base.shop/items/133711930",
+    price: "2,400円（税込）",
     shipping: donutShippingSummary,
-    weight: "6個入り（1個あたり約65g）",
+    weight: "65g×6個",
     features: donutBaseFeatures,
     taste:
       "紅茶の華やかな香りがふんわりと立つ、上品な味わいです。ミルクと合わせると、ミルクティーのような香りが広がります。",
