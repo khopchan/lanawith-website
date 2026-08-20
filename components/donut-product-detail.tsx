@@ -6,17 +6,17 @@ import type { DonutProduct } from "@/lib/donut-products"
 
 export default function DonutProductDetail({ product }: { product: DonutProduct }) {
   return (
-    <div className="min-h-screen bg-brand-milk-white">
-      <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
+    <div className="min-h-screen bg-white">
+      <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <a href="/" className="font-serif text-2xl text-brand-dark-brown hover:text-brand-mocha transition-colors">
+          <a href="/" className="font-serif text-2xl text-brand-text hover:text-brand-text-muted transition-colors">
             LANA WITH.
           </a>
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-brand-dark-brown hover:text-brand-mocha transition-colors japanese-text">
+            <a href="/" className="text-brand-text hover:text-brand-text-muted transition-colors japanese-text">
               ホーム
             </a>
-            <a href="/donuts" className="text-brand-dark-brown hover:text-brand-mocha transition-colors japanese-text">
+            <a href="/donuts" className="text-brand-text hover:text-brand-text-muted transition-colors japanese-text">
               ドーナツ一覧
             </a>
           </nav>
@@ -24,12 +24,12 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
       </header>
 
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center space-x-2 text-sm text-brand-dark-brown">
-          <a href="/" className="hover:text-brand-mocha transition-colors">
+        <div className="flex items-center space-x-2 text-sm text-brand-text-muted">
+          <a href="/" className="hover:text-brand-text transition-colors">
             ホーム
           </a>
           <span>/</span>
-          <a href="/donuts" className="hover:text-brand-mocha transition-colors">
+          <a href="/donuts" className="hover:text-brand-text transition-colors">
             ドーナツ
           </a>
           <span>/</span>
@@ -42,7 +42,7 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-4">
-                <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
+                <div className="aspect-square rounded-2xl overflow-hidden border border-brand-border">
                   <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
                 {product.thumbnails && product.thumbnails.length > 0 ? (
@@ -58,21 +58,21 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
 
               <div className="space-y-6">
                 <div>
-                  <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-dark-brown mb-4">{product.name}</h1>
+                  <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-text mb-4">{product.name}</h1>
                   {product.price ? (
-                    <p className="text-xl text-brand-mocha font-semibold mb-2">{product.price}</p>
+                    <p className="text-xl text-brand-text font-semibold mb-2">{product.price}</p>
                   ) : null}
                   {product.weight ? (
-                    <p className="text-brand-dark-brown japanese-text mb-1">内容量：{product.weight}</p>
+                    <p className="text-brand-text-muted japanese-text mb-1">内容量：{product.weight}</p>
                   ) : null}
                   {product.shipping ? (
-                    <p className="text-brand-dark-brown japanese-text">{product.shipping}</p>
+                    <p className="text-brand-text-muted japanese-text">{product.shipping}</p>
                   ) : null}
                 </div>
 
                 {product.setContents && product.setContents.length > 0 ? (
-                  <div className="bg-brand-beige/30 rounded-xl p-6">
-                    <h3 className="font-heading-jp text-lg text-brand-dark-brown mb-3">セット内容</h3>
+                  <div className="bg-brand-bg-alt rounded-xl p-6 border border-brand-border">
+                    <h3 className="font-heading-jp text-lg text-brand-text mb-3">セット内容</h3>
                     <div className="grid grid-cols-2 gap-3 text-sm">
                       {product.setContents.map((item) => (
                         <div key={item.label} className="flex items-center space-x-2">
@@ -89,10 +89,10 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                 <div className="space-y-4">
                   {product.description ? (
                     <div className="flex items-start space-x-3">
-                      <Package className="w-5 h-5 text-brand-mocha mt-1" />
+                      <Package className="w-5 h-5 text-brand-text-muted mt-1" />
                       <div>
-                        <h4 className="font-semibold text-brand-dark-brown">商品説明</h4>
-                        <p className="text-sm text-brand-dark-brown japanese-text leading-relaxed">
+                        <h4 className="font-semibold text-brand-text">商品説明</h4>
+                        <p className="text-sm text-brand-text japanese-text leading-relaxed">
                           {product.description}
                         </p>
                       </div>
@@ -101,30 +101,30 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
 
                   {product.allergy ? (
                     <div className="flex items-start space-x-3">
-                      <AlertTriangle className="w-5 h-5 text-brand-mocha mt-1" />
+                      <AlertTriangle className="w-5 h-5 text-brand-text-muted mt-1" />
                       <div>
-                        <h4 className="font-semibold text-brand-dark-brown">アレルギー表示</h4>
-                        <p className="text-sm text-brand-dark-brown">{product.allergy}</p>
+                        <h4 className="font-semibold text-brand-text">アレルギー表示</h4>
+                        <p className="text-sm text-brand-text-muted">{product.allergy}</p>
                       </div>
                     </div>
                   ) : null}
 
                   {product.shelfLife ? (
                     <div className="flex items-start space-x-3">
-                      <Clock className="w-5 h-5 text-brand-mocha mt-1" />
+                      <Clock className="w-5 h-5 text-brand-text-muted mt-1" />
                       <div>
-                        <h4 className="font-semibold text-brand-dark-brown">消費期限・保存方法</h4>
-                        <p className="text-sm text-brand-dark-brown">{product.shelfLife}</p>
+                        <h4 className="font-semibold text-brand-text">消費期限・保存方法</h4>
+                        <p className="text-sm text-brand-text-muted">{product.shelfLife}</p>
                       </div>
                     </div>
                   ) : null}
 
                   {product.shippingInfo ? (
                     <div className="flex items-start space-x-3">
-                      <Truck className="w-5 h-5 text-brand-mocha mt-1" />
+                      <Truck className="w-5 h-5 text-brand-text-muted mt-1" />
                       <div>
-                        <h4 className="font-semibold text-brand-dark-brown">発送情報</h4>
-                        <p className="text-sm text-brand-dark-brown japanese-text">{product.shippingInfo}</p>
+                        <h4 className="font-semibold text-brand-text">発送情報</h4>
+                        <p className="text-sm text-brand-text-muted japanese-text">{product.shippingInfo}</p>
                       </div>
                     </div>
                   ) : null}
@@ -134,7 +134,7 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                   {product.shopUrl ? (
                     <Button
                       asChild
-                      className="w-full bg-brand-mocha hover:bg-brand-dark-brown text-white py-3 flex items-center justify-center gap-2"
+                      className="w-full bg-brand-button hover:bg-brand-button-hover text-white py-3 flex items-center justify-center gap-2"
                     >
                       <a href={product.shopUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4" />
@@ -154,8 +154,7 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                   </Button>
 
                   <Button
-                    className="w-full text-white py-3 flex items-center justify-center gap-2"
-                    style={{ backgroundColor: "#4B2E23" }}
+                    className="w-full bg-brand-button hover:bg-brand-button-hover text-white py-3 flex items-center justify-center gap-2"
                     onClick={() => window.open("mailto:lana.with.granola@gmail.com", "_blank")}
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -175,11 +174,11 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
         </div>
       </section>
 
-      <section className="py-12 bg-brand-beige/30">
+      <section className="py-12 bg-brand-bg-alt">
         <div className="container mx-auto px-4 text-center">
           <Button
             variant="outline"
-            className="border-brand-mocha text-brand-mocha hover:bg-brand-mocha hover:text-white bg-transparent"
+            className="border-brand-border text-brand-text hover:bg-white bg-brand-bg-muted"
             onClick={() => (window.location.href = "/donuts")}
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
@@ -188,11 +187,11 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
         </div>
       </section>
 
-      <footer className="bg-brand-dark-brown text-white py-16">
+      <footer className="bg-brand-bg-muted text-brand-text py-16">
         <div className="container mx-auto px-4 text-center">
           <div className="font-serif text-2xl mb-4">LANA WITH.</div>
-          <p className="text-white/70 japanese-text mb-8">ハンドメイド グラノーラ専門店</p>
-          <div className="space-y-2 text-white/60 japanese-text">
+          <p className="text-brand-text-muted japanese-text mb-8">ハンドメイド グラノーラ専門店</p>
+          <div className="space-y-2 text-brand-text-muted japanese-text">
             <p>&copy; 2025 LANA WITH. All rights reserved.</p>
           </div>
         </div>

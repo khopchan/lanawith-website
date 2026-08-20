@@ -328,7 +328,7 @@ export default function HomePage() {
   }, [isMobileMenuOpen])
 
   return (
-    <div className="min-h-screen bg-brand-milk-white">
+    <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-4 py-3 md:py-4 flex items-center justify-between">
@@ -670,7 +670,7 @@ export default function HomePage() {
               <div id="heroButtons" className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
-                  className="bg-[#C2A98D] hover:bg-[#B8A082] text-white px-6 py-3 text-base md:text-lg font-medium rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl japanese-text"
+                  className="bg-brand-button hover:bg-brand-button-hover text-white px-6 py-3 text-base md:text-lg font-medium rounded-xl transition-all duration-300 japanese-text"
                   onClick={() => window.open("https://lanagranola.base.shop/", "_blank")}
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
@@ -678,7 +678,7 @@ export default function HomePage() {
                 </Button>
                 <button
                   onClick={() => scrollToSection("about-brand")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-neutral-300/60 bg-white/90 px-4 h-10 md:h-11 md:px-5 text-[14px] md:text-base hover:bg-white shadow-sm transition japanese-text text-brand-dark-brown hover:text-brand-dark-brown"
+                  className="inline-flex items-center gap-2 rounded-xl border border-brand-border bg-white/90 px-4 h-10 md:h-11 md:px-5 text-[14px] md:text-base hover:bg-white transition japanese-text text-brand-text hover:text-brand-text"
                 >
                   私たちについて
                   <ArrowRight className="w-4 h-4" />
@@ -697,7 +697,7 @@ export default function HomePage() {
       </section>
 
       {/* Brand Values Section */}
-      <section id="about" className="py-20 bg-brand-beige/30">
+      <section id="about" className="py-20 bg-brand-bg-alt">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl text-brand-dark-brown mb-4">
@@ -718,14 +718,13 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <ListChecks className="w-8 h-8 text-brand-dark-brown" />
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto border border-brand-border">
+                <ListChecks className="w-8 h-8 text-brand-text" />
               </div>
               <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">選びやすさへの工夫</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
-                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text whitespace-pre-line"
-                  style={{ color: "#4B2E23" }}
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text whitespace-pre-line text-brand-text"
                 >
                   {`見ただけで、おいしさが伝わるように。
 
@@ -739,14 +738,13 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             </div>
 
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <Hand className="w-8 h-8 text-brand-dark-brown" />
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto border border-brand-border">
+                <Hand className="w-8 h-8 text-brand-text" />
               </div>
               <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">細部までの手仕事</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
-                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
-                  style={{ color: "#4B2E23" }}
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text text-brand-text"
                 >
                   自家製粉オートミールやナッツを手作業で刻み
                   <br />
@@ -758,14 +756,13 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             </div>
 
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-brand-milk-white rounded-full flex items-center justify-center mx-auto border-2 border-brand-mocha">
-                <Star className="w-8 h-8 text-brand-dark-brown" />
+              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto border border-brand-border">
+                <Star className="w-8 h-8 text-brand-text" />
               </div>
               <h3 className="japanese-text font-heading-jp text-xl text-brand-dark-brown">特別で日常に寄り添う</h3>
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
-                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text"
-                  style={{ color: "#4B2E23" }}
+                  className="kodawari-copy text-[14px] md:text-base jp-tight leading-relaxed mb-8 japanese-text text-brand-text"
                 >
                   大量生産では再現できない深い味わいを追求。
                   <br />
@@ -780,9 +777,9 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       </section>
 
       {/* Owner Section */}
-      <section id="owner" className="py-12 md:py-16 bg-[#efe7de]/40">
+      <section id="owner" className="py-12 md:py-16 bg-white">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-[28px] md:text-3xl font-serif text-[#4b2f21] mb-8 md:mb-10 tracking-wide">
+          <h2 className="text-center text-[28px] md:text-3xl font-serif text-brand-text mb-8 md:mb-10 tracking-wide">
             owner
           </h2>
 
@@ -802,8 +799,8 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                 />
               </a>
               <div className="mt-4">
-                <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">mao</h3>
-                <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
+                <h3 className="text-[15px] md:text-base font-medium text-brand-text">mao</h3>
+                <div className="text-[15px] md:text-[16px] text-brand-text-muted mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
                   <p className="mb-3">
                     yoga instructor
                     <br />
@@ -816,7 +813,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                   href="https://www.instagram.com/maoyoga_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-[#c6926b] hover:decoration-[#A67C52] transition-colors"
+                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-brand-border hover:decoration-brand-text-muted transition-colors text-brand-text-muted hover:text-brand-text"
                 >
                   about
                 </a>
@@ -838,8 +835,8 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                 />
               </a>
               <div className="mt-4">
-                <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">yuna</h3>
-                <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
+                <h3 className="text-[15px] md:text-base font-medium text-brand-text">yuna</h3>
+                <div className="text-[15px] md:text-[16px] text-brand-text-muted mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
                   <p className="mb-3">
                     baker
                     <br />
@@ -852,7 +849,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                   href="https://www.instagram.com/co_no_mawari/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-[#c6926b] hover:decoration-[#A67C52] transition-colors"
+                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-brand-border hover:decoration-brand-text-muted transition-colors text-brand-text-muted hover:text-brand-text"
                 >
                   about
                 </a>
@@ -874,8 +871,8 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                 />
               </a>
               <div className="mt-4">
-                <h3 className="text-[15px] md:text-base font-medium text-[#4b2f21]">Lanaについて</h3>
-                <div className="text-[15px] md:text-[16px] text-[#6b5143] mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
+                <h3 className="text-[15px] md:text-base font-medium text-brand-text">Lanaについて</h3>
+                <div className="text-[15px] md:text-[16px] text-brand-text-muted mt-2 mb-4 leading-[1.7] md:leading-[1.6]">
                   <p className="mb-3">
                     幼馴染のふたりで運営する LANA WITH.
                     <br />
@@ -886,7 +883,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                   href="https://www.instagram.com/lanawith_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-[#c6926b] hover:decoration-[#A67C52] transition-colors"
+                  className="inline-block mt-1 text-[13px] px-[10px] py-1 underline underline-offset-4 decoration-brand-border hover:decoration-brand-text-muted transition-colors text-brand-text-muted hover:text-brand-text"
                 >
                   view more
                 </a>
@@ -897,21 +894,21 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       </section>
 
       {/* About LANA WITH. Section */}
-      <section id="about-brand" className="pt-16 pb-20 md:pt-20 md:pb-24">
+      <section id="about-brand" className="pt-16 pb-20 md:pt-20 md:pb-24 bg-brand-bg-alt">
         <div className="max-w-[1100px] mx-auto px-5">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-stone-800">About LANA WITH.</h2>
-            <p className="mt-2 text-stone-600 md:text-lg japanese-text">おいしいを、もっと自由に。</p>
+            <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-brand-text">About LANA WITH.</h2>
+            <p className="mt-2 text-brand-text-muted md:text-lg japanese-text">おいしいを、もっと自由に。</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {/* Card 1: LANA WITH.のはじまり */}
-            <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
+            <div className="rounded-2xl bg-white border border-brand-border p-5 md:p-6">
               <div className="flex items-center mb-2">
-                <Heart className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">LANA WITH.のはじまり</h3>
+                <Heart className="w-6 h-6 text-brand-text-muted mr-2" />
+                <h3 className="text-xl md:text-2xl font-heading-jp text-brand-text">LANA WITH.のはじまり</h3>
               </div>
-              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-brand-text japanese-text whitespace-pre-line">
                 {`2021年7月19日。
 
 ふたりで開催したコラボイベントをきっかけに、LANA WITH.は生まれました。
@@ -929,11 +926,11 @@ LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るお�
             </div>
 
             {/* Card 2: 選びやすさへの工夫 */}
-            <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6">
+            <div className="rounded-2xl bg-brand-bg-muted border border-brand-border p-5 md:p-6">
               <div className="flex items-center mb-2">
-                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">選びやすさへの工夫</h3>
+                <h3 className="text-xl md:text-2xl font-heading-jp text-brand-text">選びやすさへの工夫</h3>
               </div>
-              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-brand-text japanese-text whitespace-pre-line">
                 {`見ただけで、おいしさが伝わるように。
 
 LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしています。
@@ -945,12 +942,12 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             </div>
 
             {/* Card 3: グラノーラが生まれた理由 */}
-            <div className="rounded-2xl bg-stone-50 border border-stone-200/70 shadow-sm p-5 md:p-6 md:col-span-2">
+            <div className="rounded-2xl bg-white border border-brand-border p-5 md:p-6 md:col-span-2">
               <div className="flex items-center mb-2">
-                <Sparkles className="w-6 h-6 text-amber-700/80 mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-stone-800">LANAが生まれた理由</h3>
+                <Sparkles className="w-6 h-6 text-brand-text-muted mr-2" />
+                <h3 className="text-xl md:text-2xl font-heading-jp text-brand-text">LANAが生まれた理由</h3>
               </div>
-              <p className="text-[15px] md:text-[16px] leading-relaxed text-stone-700 japanese-text whitespace-pre-line">
+              <p className="text-[15px] md:text-[16px] leading-relaxed text-brand-text japanese-text whitespace-pre-line">
                 {`自由な食べ方ができるグラノーラに魅力を感じて。
 
 そのままはもちろん、ヨーグルトやアイスに添えたり、気分や暮らしに合わせて楽しめるグラノーラ。
@@ -973,13 +970,13 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       </section>
 
       {/* Updated With Us Section */}
-      <section className="py-20" style={{ backgroundColor: "#EADBC8" }}>
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl mb-4" style={{ color: "#4B2E23" }}>
+            <h2 className="font-serif text-3xl md:text-4xl mb-4 text-brand-text">
               with 私たちと一緒に
             </h2>
-            <p className="text-lg mb-8" style={{ color: "#4B2E23" }}>
+            <p className="text-lg mb-8 text-brand-text-muted">
               OEM・卸販売のご相談はこちらから
             </p>
           </div>
@@ -999,8 +996,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             <div className="text-center">
               <div className="max-w-[38ch] md:max-w-none mx-auto">
                 <p
-                  className="oem-copy text-[14px] md:text-lg jp-tight leading-relaxed mb-8 japanese-text"
-                  style={{ color: "#4B2E23" }}
+                  className="oem-copy text-[14px] md:text-lg jp-tight leading-relaxed mb-8 japanese-text text-brand-text"
                 >
                   LANA WITH. では、OEM生産・卸販売のご依頼も承っております。
                   一緒にオリジナル商品づくりをしてみませんか？ お気軽にお問い合わせください。
@@ -1020,8 +1016,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                 </Button>
 
                 <Button
-                  className="text-white px-6 py-3 flex items-center justify-center gap-2"
-                  style={{ backgroundColor: "#4B2E23" }}
+                  className="bg-brand-button hover:bg-brand-button-hover text-white px-6 py-3 flex items-center justify-center gap-2"
                   onClick={() => window.open("mailto:lana.with.granola@gmail.com", "_blank")}
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1041,7 +1036,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       </section>
 
       {/* Access/Store Information Section */}
-      <section id="access" className="py-20 bg-white">
+      <section id="access" className="py-20 bg-brand-bg-alt">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl text-brand-dark-brown mb-4">
@@ -1063,7 +1058,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
               />
             </div>
 
-            <p className="mt-2 text-center text-gray-700 japanese-text">
+            <p className="mt-2 text-center text-brand-text-muted japanese-text">
               〒444-2136 愛知県岡崎市上里１丁目3−２
               <br />
               LANA WITH.
@@ -1071,7 +1066,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
 
             <div className="text-center mt-6">
               <Button
-                className="bg-brand-mocha hover:bg-brand-dark-brown text-white"
+                className="bg-brand-button hover:bg-brand-button-hover text-white"
                 onClick={() => window.open("https://maps.app.goo.gl/BzCGi1zzDn4HQNcm6", "_blank")}
               >
                 Googleマップで開く
@@ -1082,16 +1077,16 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-brand-mocha to-brand-dark-brown">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
+          <h2 className="font-serif text-3xl md:text-4xl text-brand-text mb-4">
             今すぐ特別な朝食を始めませんか？
           </h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto japanese-text">
+          <p className="text-xl text-brand-text-muted mb-8 max-w-2xl mx-auto japanese-text">
             ハンドメイドの温かさを、あなたの食卓にお届けします。
           </p>
           <Button
-            className="bg-white text-brand-dark-brown hover:bg-brand-milk-white px-8"
+            className="bg-brand-button hover:bg-brand-button-hover text-white px-8"
             onClick={() => window.open("https://lanagranola.base.shop/items/121689053", "_blank")}
           >
             グラノーラ 定期便セット
@@ -1100,19 +1095,19 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       </section>
 
       {/* Footer */}
-      <footer id="contact" className="bg-brand-dark-brown text-white py-16">
+      <footer id="contact" className="bg-brand-bg-muted text-brand-text py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="font-serif text-2xl">LANA WITH.</div>
-              <p className="text-white/80 japanese-text">ラナウィズ</p>
-              <p className="text-white/70 japanese-text">ハンドメイド グラノーラ専門店</p>
+              <p className="text-brand-text-muted japanese-text">ラナウィズ</p>
+              <p className="text-brand-text-muted japanese-text">ハンドメイド グラノーラ専門店</p>
               <div className="flex space-x-4">
                 <a
                   href="https://www.instagram.com/lanawith_/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors"
+                  className="text-brand-text-muted hover:text-brand-text transition-colors"
                 >
                   <Instagram className="w-6 h-6" />
                 </a>
@@ -1120,7 +1115,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
                   href="https://lanagranola.base.shop/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/70 hover:text-white transition-colors"
+                  className="text-brand-text-muted hover:text-brand-text transition-colors"
                 >
                   <ExternalLink className="w-6 h-6" />
                 </a>
@@ -1129,24 +1124,24 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
 
             <div className="space-y-4">
               <h3 className="font-serif text-lg">会社情報</h3>
-              <ul className="space-y-2 text-white/70 japanese-text">
+              <ul className="space-y-2 text-brand-text-muted japanese-text">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-brand-text transition-colors">
                     私たちについて
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-brand-text transition-colors">
                     お問い合わせ
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-brand-text transition-colors">
                     配送について
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="#" className="hover:text-brand-text transition-colors">
                     プライバシーポリシー
                   </a>
                 </li>
@@ -1154,7 +1149,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             </div>
           </div>
 
-          <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60 japanese-text">
+          <div className="border-t border-brand-border mt-12 pt-8 text-center text-brand-text-muted japanese-text">
             <p>&copy; 2025 LANA WITH. All rights reserved.</p>
           </div>
         </div>
