@@ -14,8 +14,8 @@ export default function ProductTabs(props: any) {
     <div className="w-full">
       {/* タイトル */}
       <div className="mb-6">
-        <h2 className="text-3xl font-serif tracking-wide">LANA WITH. 商品一覧</h2>
-        <p className="text-neutral-500 mt-2">カテゴリをタブで切り替えできます</p>
+        <h2 className="text-3xl font-serif tracking-wide text-brand-text">LANA WITH. 商品一覧</h2>
+        <p className="text-brand-text-muted mt-2">カテゴリをタブで切り替えできます</p>
       </div>
 
       {/* タブ */}
@@ -26,8 +26,8 @@ export default function ProductTabs(props: any) {
             onClick={() => setState({ catalog: { ...catalog, activeTab: cat.key } })}
             className={`px-4 py-2 rounded-full border transition ${
               activeKey === cat.key
-                ? "bg-amber-100 border-amber-300 text-amber-900"
-                : "bg-white hover:bg-neutral-50 border-neutral-200"
+                ? "bg-brand-bg-muted border-brand-border text-brand-text"
+                : "bg-white hover:bg-brand-bg-alt border-brand-border text-brand-text-muted"
             }`}
           >
             {cat.label}
