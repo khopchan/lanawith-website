@@ -14,8 +14,6 @@ import {
   ListChecks,
   Hand,
   Star,
-  Heart,
-  Sparkles,
 } from "lucide-react"
 import { useState, useEffect } from "react"
 import ProductTabs from "@/components/product-tabs"
@@ -903,13 +901,12 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             <p className="mt-2 text-brand-text-muted md:text-lg japanese-text">おいしいを、もっと自由に。</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
             {/* Card 1: LANA WITH.のはじまり */}
             <div className="rounded-2xl bg-white border border-brand-border p-5 md:p-6">
-              <div className="flex items-center mb-2">
-                <Heart className="w-6 h-6 text-brand-text-muted mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-brand-text">LANA WITH.のはじまり</h3>
-              </div>
+              <h3 className="text-xl md:text-2xl font-heading-jp !font-medium text-brand-text mb-3">
+                LANA WITH.のはじまり
+              </h3>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-brand-text japanese-text whitespace-pre-line">
                 {`2021年7月19日。
 
@@ -928,10 +925,10 @@ LANA WITH.は、日々の暮らしにそっと寄り添い、記憶に残るお�
             </div>
 
             {/* Card 2: 選びやすさへの工夫 */}
-            <div className="rounded-2xl bg-brand-bg-muted border border-brand-border p-5 md:p-6">
-              <div className="flex items-center mb-2">
-                <h3 className="text-xl md:text-2xl font-heading-jp text-brand-text">選びやすさへの工夫</h3>
-              </div>
+            <div className="rounded-2xl bg-white border border-brand-border p-5 md:p-6">
+              <h3 className="text-xl md:text-2xl font-heading-jp !font-medium text-brand-text mb-3">
+                選びやすさへの工夫
+              </h3>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-brand-text japanese-text whitespace-pre-line">
                 {`見ただけで、おいしさが伝わるように。
 
@@ -943,12 +940,11 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
               </p>
             </div>
 
-            {/* Card 3: グラノーラが生まれた理由 */}
+            {/* Card 3: LANAが生まれた理由 */}
             <div className="rounded-2xl bg-white border border-brand-border p-5 md:p-6 md:col-span-2">
-              <div className="flex items-center mb-2">
-                <Sparkles className="w-6 h-6 text-brand-text-muted mr-2" />
-                <h3 className="text-xl md:text-2xl font-heading-jp text-brand-text">LANAが生まれた理由</h3>
-              </div>
+              <h3 className="text-xl md:text-2xl font-heading-jp !font-medium text-brand-text mb-3">
+                LANAが生まれた理由
+              </h3>
               <p className="text-[15px] md:text-[16px] leading-relaxed text-brand-text japanese-text whitespace-pre-line">
                 {`自由な食べ方ができるグラノーラに魅力を感じて。
 
