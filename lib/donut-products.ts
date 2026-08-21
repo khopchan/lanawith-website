@@ -93,10 +93,12 @@ export const donutSetProduct: DonutProduct = {
     { label: "紅茶", count: "1個", colorClass: "bg-orange-300" },
   ],
   thumbnails: [
-    { src: "/plain-oatmeal-donut.png", alt: "プレーン" },
-    { src: "/cocoa-oatmeal-donut.png", alt: "ココア" },
-    { src: "/matcha-oatmeal-donut.png", alt: "西尾抹茶" },
-    { src: "/tea-oatmeal-donut.png", alt: "紅茶" },
+    { src: "/images/products/donut-all.jpg", alt: "4種類盛り合わせ" },
+    { src: "/images/products/donut-set-plain-info.png", alt: "プレーン説明" },
+    { src: "/images/products/donut-cocoa-info.png", alt: "ココア説明" },
+    { src: "/images/products/donut-set-matcha-info.png", alt: "抹茶説明" },
+    { src: "/images/products/donut-tea-info.png", alt: "紅茶説明" },
+    { src: "/plain-oatmeal-donut.png", alt: "プレーン単体" },
   ],
 }
 
