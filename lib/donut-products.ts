@@ -71,7 +71,7 @@ export const donutSetProduct: DonutProduct = {
   slug: "set",
   name: "オートミール焼きドーナツ 4種類セット 6個入り",
   breadcrumb: "オートミール焼きドーナツ６個入り",
-  image: "/oatmeal-donuts-gift-box.png",
+  image: "/images/products/donut-all.jpg",
   href: "/donuts/oatmeal-donuts",
   price: "2,400円（税込）",
   shopUrl: "https://lanagranola.base.shop/items/101173991",
@@ -93,12 +93,12 @@ export const donutSetProduct: DonutProduct = {
     { label: "紅茶", count: "1個", colorClass: "bg-orange-300" },
   ],
   thumbnails: [
-    { src: "/images/products/donut-all.jpg", alt: "4種類盛り合わせ" },
     { src: "/images/products/donut-set-plain-info.png", alt: "プレーン説明" },
     { src: "/images/products/donut-cocoa-info.png", alt: "ココア説明" },
     { src: "/images/products/donut-set-matcha-info.png", alt: "抹茶説明" },
     { src: "/images/products/donut-tea-info.png", alt: "紅茶説明" },
     { src: "/plain-oatmeal-donut.png", alt: "プレーン単体" },
+    { src: "/oatmeal-donuts-gift-box.png", alt: "ギフトボックス" },
   ],
 }
 
