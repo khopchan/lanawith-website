@@ -1,10 +1,27 @@
 "use client"
 
+import { useMemo, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Package, Clock, AlertTriangle, Truck, ExternalLink } from "lucide-react"
 import type { DonutProduct } from "@/lib/donut-products"
 
 export default function DonutProductDetail({ product }: { product: DonutProduct }) {
+  const galleryImages = useMemo(() => {
+    const images = [product.image]
+    for (const thumb of product.thumbnails ?? []) {
+      if (!images.includes(thumb.src)) {
+        images.push(thumb.src)
+      }
+    }
+    return images
+  }, [product.image, product.thumbnails])
+  const [activeIndex, setActiveIndex] = useState(0)
+  const activeImage = galleryImages[Math.min(activeIndex, galleryImages.length - 1)] ?? product.image
+  const activeAlt =
+    activeIndex === 0
+      ? product.name
+      : product.thumbnails?.find((thumb) => thumb.src === activeImage)?.alt || product.name
+
   return (
     <div className="min-h-screen bg-brand-milk-white">
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
@@ -43,14 +60,25 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                  <img src={activeImage} alt={activeAlt} className="w-full h-full object-cover" />
                 </div>
-                {product.thumbnails && product.thumbnails.length > 0 ? (
-                  <div className="grid grid-cols-4 gap-2">
-                    {product.thumbnails.map((thumb) => (
-                      <div key={thumb.alt} className="aspect-square rounded-lg overflow-hidden">
-                        <img src={thumb.src} alt={thumb.alt} className="w-full h-full object-cover" />
-                      </div>
+                {galleryImages.length > 1 ? (
+                  <div className="flex gap-2 overflow-x-auto pb-1 md:grid md:grid-cols-4 md:overflow-visible">
+                    {galleryImages.map((src, index) => (
+                      <button
+                        key={`${src}-${index}`}
+                        type="button"
+                        onClick={() => setActiveIndex(index)}
+                        aria-label={`${product.name}の画像${index + 1}`}
+                        aria-pressed={index === activeIndex}
+                        className={`aspect-square w-20 shrink-0 md:w-auto rounded-lg overflow-hidden border-2 transition ${
+                          index === activeIndex
+                            ? "border-brand-dark-brown"
+                            : "border-transparent opacity-80 hover:opacity-100"
+                        }`}
+                      >
+                        <img src={src} alt="" className="w-full h-full object-cover" />
+                      </button>
                     ))}
                   </div>
                 ) : null}

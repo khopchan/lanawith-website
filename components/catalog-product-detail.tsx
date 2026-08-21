@@ -1,10 +1,18 @@
 "use client"
 
+import { useMemo, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Package, Clock, AlertTriangle, Truck, ExternalLink } from "lucide-react"
 import type { CatalogProduct } from "@/lib/catalog-products"
 
 export default function CatalogProductDetail({ product }: { product: CatalogProduct }) {
+  const galleryImages = useMemo(
+    () => (product.galleryImages && product.galleryImages.length > 0 ? product.galleryImages : [product.image]),
+    [product.galleryImages, product.image],
+  )
+  const [activeIndex, setActiveIndex] = useState(0)
+  const activeImage = galleryImages[Math.min(activeIndex, galleryImages.length - 1)] ?? product.image
+
   return (
     <div className="min-h-screen bg-brand-milk-white">
       <header className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-brand-beige">
@@ -47,11 +55,31 @@ export default function CatalogProductDetail({ product }: { product: CatalogProd
               <div className="space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-xl bg-white">
                   <img
-                    src={product.image}
+                    src={activeImage}
                     alt={product.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
+                {galleryImages.length > 1 ? (
+                  <div className="flex gap-2 overflow-x-auto pb-1 md:grid md:grid-cols-4 md:overflow-visible">
+                    {galleryImages.map((src, index) => (
+                      <button
+                        key={`${src}-${index}`}
+                        type="button"
+                        onClick={() => setActiveIndex(index)}
+                        aria-label={`${product.name}の画像${index + 1}`}
+                        aria-pressed={index === activeIndex}
+                        className={`aspect-square w-20 shrink-0 md:w-auto rounded-lg overflow-hidden border-2 transition ${
+                          index === activeIndex
+                            ? "border-brand-dark-brown"
+                            : "border-transparent opacity-80 hover:opacity-100"
+                        }`}
+                      >
+                        <img src={src} alt="" className="w-full h-full object-cover" />
+                      </button>
+                    ))}
+                  </div>
+                ) : null}
               </div>
 
               <div className="space-y-6">
