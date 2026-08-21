@@ -4,8 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: #ffffff;
+  --foreground: #2f2f2d;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -78,11 +78,15 @@
   --font-sans: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
   --font-serif: var(--font-lato), var(--font-noto-sans-jp), sans-serif;
 
-  /* Lana with Brand Colors */
-  --color-brand-dark-brown: #4b2e23;
-  --color-brand-milk-white: #faf8f5;
-  --color-brand-beige: #eadbc8;
-  --color-brand-mocha: #c2a98d;
+  /* LANA WITH. 役割別カラー */
+  --color-brand-bg: #ffffff;
+  --color-brand-bg-alt: #f7f7f5;
+  --color-brand-bg-muted: #f2f2f0;
+  --color-brand-border: #e4e4e0;
+  --color-brand-text: #2f2f2d;
+  --color-brand-text-muted: #6f6f6b;
+  --color-brand-button: #333331;
+  --color-brand-button-hover: #474744;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -156,37 +160,75 @@
   font-style: normal;
 }
 
-/* Brand color utilities */
+/* Brand color utilities（役割別に再割り当て） */
+.bg-brand-bg {
+  background-color: #ffffff;
+}
+
+.bg-brand-bg-alt {
+  background-color: #f7f7f5;
+}
+
+.bg-brand-bg-muted {
+  background-color: #f2f2f0;
+}
+
+.bg-brand-button {
+  background-color: #333331;
+}
+
+.bg-brand-button:hover,
+.hover\:bg-brand-button-hover:hover {
+  background-color: #474744;
+}
+
+.bg-brand-button-hover {
+  background-color: #474744;
+}
+
+.text-brand-text {
+  color: #2f2f2d;
+}
+
+.text-brand-text-muted {
+  color: #6f6f6b;
+}
+
+.border-brand-border {
+  border-color: #e4e4e0;
+}
+
+/* 既存クラス名は用途に合わせて新パレットへ割り当て */
 .bg-brand-milk-white {
-  background-color: #faf8f5;
+  background-color: #ffffff;
 }
 
 .bg-brand-beige {
-  background-color: #eadbc8;
+  background-color: #f7f7f5;
 }
 
 .bg-brand-dark-brown {
-  background-color: #4b2e23;
+  background-color: #f2f2f0;
 }
 
 .bg-brand-mocha {
-  background-color: #c2a98d;
+  background-color: #333331;
 }
 
 .text-brand-dark-brown {
-  color: #4b2e23;
+  color: #2f2f2d;
 }
 
 .text-brand-mocha {
-  color: #c2a98d;
+  color: #6f6f6b;
 }
 
 .border-brand-beige {
-  border-color: #eadbc8;
+  border-color: #e4e4e0;
 }
 
 .border-brand-mocha {
-  border-color: #c2a98d;
+  border-color: #e4e4e0;
 }
 
 /* —— multi-line clamp utilities (no Tailwind plugin required) —— */
