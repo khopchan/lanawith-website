@@ -700,9 +700,9 @@ export default function HomePage() {
       <section id="about" className="py-20 bg-brand-bg-alt">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl text-brand-dark-brown mb-4">
-              <span className="font-serif">LANA WITH.</span>
-              <span className="japanese-text font-heading-jp">のこだわり</span>
+            <h2 className="text-2xl md:text-3xl font-heading-jp !font-medium text-brand-text mb-4">
+              <span>LANA WITH.</span>
+              <span className="japanese-text">のこだわり</span>
             </h2>
             <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg mb-8">
               <iframe
@@ -779,7 +779,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       {/* Owner Section */}
       <section id="owner" className="py-12 md:py-16 bg-white">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-[28px] md:text-3xl font-serif text-brand-text mb-8 md:mb-10 tracking-wide">
+          <h2 className="text-center text-2xl md:text-3xl font-serif font-light text-brand-text mb-8 md:mb-10 tracking-wide">
             owner
           </h2>
 
@@ -897,7 +897,9 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       <section id="about-brand" className="pt-16 pb-20 md:pt-20 md:pb-24 bg-brand-bg-alt">
         <div className="max-w-[1100px] mx-auto px-5">
           <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif tracking-wide text-brand-text">About LANA WITH.</h2>
+            <h2 className="text-3xl md:text-4xl font-serif font-light tracking-wide text-brand-text">
+              About LANA WITH.
+            </h2>
             <p className="mt-2 text-brand-text-muted md:text-lg japanese-text">おいしいを、もっと自由に。</p>
           </div>
 
@@ -973,7 +975,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl mb-4 text-brand-text">
+            <h2 className="text-2xl md:text-3xl font-heading-jp !font-medium mb-4 text-brand-text">
               with 私たちと一緒に
             </h2>
             <p className="text-lg mb-8 text-brand-text-muted">
@@ -1039,7 +1041,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
       <section id="access" className="py-20 bg-brand-bg-alt">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl text-brand-dark-brown mb-4">
+            <h2 className="text-2xl md:text-3xl font-heading-jp !font-medium text-brand-text mb-4">
               アクセス / 店舗情報
             </h2>
           </div>

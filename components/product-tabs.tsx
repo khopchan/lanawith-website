@@ -14,7 +14,9 @@ export default function ProductTabs(props: any) {
     <div className="w-full">
       {/* タイトル */}
       <div className="mb-6">
-        <h2 className="text-3xl font-serif tracking-wide text-brand-text">LANA WITH. 商品一覧</h2>
+        <h2 className="text-2xl md:text-3xl font-heading-jp !font-medium tracking-wide text-brand-text">
+          LANA WITH. 商品一覧
+        </h2>
         <p className="text-brand-text-muted mt-2">カテゴリをタブで切り替えできます</p>
       </div>
 
