@@ -7,6 +7,8 @@ export type CatalogProduct = {
   name: string
   breadcrumb: string
   image: string
+  /** 詳細ページギャラリー。先頭は一覧と同じメイン画像を維持 */
+  galleryImages?: string[]
   href: string
   shopUrl: string
   price: string
@@ -19,6 +21,16 @@ export type CatalogProduct = {
   allergy: string
   shelfLife: string
   shippingInfo: string
+}
+
+function granolaGallery(flavor: "lana" | "tea" | "chocolate" | "matcha", size: "large" | "mini") {
+  const main = `/images/products/granola-${flavor}-${size}.jpg`
+  return [
+    main,
+    `/images/products/granola-${flavor}-bowl.jpg`,
+    `/images/products/granola-${flavor}-info.png`,
+    "/images/products/granola-howto.png",
+  ]
 }
 
 const shippingSummary = "送料：配送方法・地域により異なります（8,000円以上のご購入で国内送料無料）"
@@ -93,6 +105,7 @@ export const granolaProducts: CatalogProduct[] = [
     name: "LANAグラノーラ",
     breadcrumb: "LANAグラノーラ",
     image: "/images/products/granola-lana-large.jpg",
+    galleryImages: granolaGallery("lana", "large"),
     href: "/granola/lana",
     shopUrl: "https://lanagranola.base.shop/items/138276406",
     price: "1,944円（税込）",
@@ -109,6 +122,7 @@ export const granolaProducts: CatalogProduct[] = [
     name: "紅茶グラノーラ",
     breadcrumb: "紅茶グラノーラ",
     image: "/images/products/granola-tea-large.jpg",
+    galleryImages: granolaGallery("tea", "large"),
     href: "/granola/tea",
     shopUrl: "https://lanagranola.base.shop/items/138276617",
     price: "1,944円（税込）",
@@ -125,6 +139,7 @@ export const granolaProducts: CatalogProduct[] = [
     name: "チョコグラノーラ",
     breadcrumb: "チョコグラノーラ",
     image: "/images/products/granola-chocolate-large.jpg",
+    galleryImages: granolaGallery("chocolate", "large"),
     href: "/granola/chocolate",
     shopUrl: "https://lanagranola.base.shop/items/138276581",
     price: "1,944円（税込）",
@@ -141,6 +156,7 @@ export const granolaProducts: CatalogProduct[] = [
     name: "抹茶グラノーラ",
     breadcrumb: "抹茶グラノーラ",
     image: "/images/products/granola-matcha-large.jpg",
+    galleryImages: granolaGallery("matcha", "large"),
     href: "/granola/matcha",
     shopUrl: "https://lanagranola.base.shop/items/138276647",
     price: "1,944円（税込）",
@@ -160,6 +176,7 @@ export const miniGranolaProducts: CatalogProduct[] = [
     name: "LANAグラノーラ",
     breadcrumb: "LANAグラノーラ（ミニ）",
     image: "/images/products/granola-lana-mini.jpg",
+    galleryImages: granolaGallery("lana", "mini"),
     href: "/mini-granola/lana",
     shopUrl: "https://lanagranola.base.shop/items/138276560",
     price: "777円（税込）",
@@ -177,6 +194,7 @@ export const miniGranolaProducts: CatalogProduct[] = [
     name: "紅茶グラノーラ",
     breadcrumb: "紅茶グラノーラ（ミニ）",
     image: "/images/products/granola-tea-mini.jpg",
+    galleryImages: granolaGallery("tea", "mini"),
     href: "/mini-granola/tea",
     shopUrl: "https://lanagranola.base.shop/items/138276634",
     price: "777円（税込）",
@@ -194,6 +212,7 @@ export const miniGranolaProducts: CatalogProduct[] = [
     name: "チョコグラノーラ",
     breadcrumb: "チョコグラノーラ（ミニ）",
     image: "/images/products/granola-chocolate-mini.jpg",
+    galleryImages: granolaGallery("chocolate", "mini"),
     href: "/mini-granola/chocolate",
     shopUrl: "https://lanagranola.base.shop/items/138276597",
     price: "777円（税込）",
@@ -211,6 +230,7 @@ export const miniGranolaProducts: CatalogProduct[] = [
     name: "抹茶グラノーラ",
     breadcrumb: "抹茶グラノーラ（ミニ）",
     image: "/images/products/granola-matcha-mini.jpg",
+    galleryImages: granolaGallery("matcha", "mini"),
     href: "/mini-granola/matcha",
     shopUrl: "https://lanagranola.base.shop/items/138276715",
     price: "777円（税込）",
@@ -231,6 +251,7 @@ export const cookieProducts: CatalogProduct[] = [
     name: "グラノーラクッキー（10枚）",
     breadcrumb: "グラノーラクッキー（10枚）",
     image: "/images/products/cookie-plain.jpg",
+    galleryImages: ["/images/products/cookie-plain.jpg", "/images/products/cookie-plain-info.png"],
     href: "/cookies/granola",
     shopUrl: "https://lanagranola.base.shop/items/138276902",
     price: "2,160円（税込）",
@@ -254,6 +275,7 @@ export const cookieProducts: CatalogProduct[] = [
     name: "紅茶クッキー（10枚）",
     breadcrumb: "紅茶クッキー（10枚）",
     image: "/images/products/cookie-tea.jpg",
+    galleryImages: ["/images/products/cookie-tea.jpg", "/images/products/cookie-tea-info.png"],
     href: "/cookies/tea",
     shopUrl: "https://lanagranola.base.shop/items/138276967",
     price: "2,160円（税込）",
@@ -275,6 +297,7 @@ export const cookieProducts: CatalogProduct[] = [
     name: "チョコクッキー（10枚）",
     breadcrumb: "チョコクッキー（10枚）",
     image: "/images/products/cookie-chocolate.jpg",
+    galleryImages: ["/images/products/cookie-chocolate.jpg", "/images/products/cookie-chocolate-info.png"],
     href: "/cookies/chocolate",
     shopUrl: "https://lanagranola.base.shop/items/138276941",
     price: "2,160円（税込）",
@@ -297,6 +320,7 @@ export const cookieProducts: CatalogProduct[] = [
     name: "抹茶クッキー（10枚）",
     breadcrumb: "抹茶クッキー（10枚）",
     image: "/images/products/cookie-matcha.jpg",
+    galleryImages: ["/images/products/cookie-matcha.jpg", "/images/products/cookie-matcha-info.png"],
     href: "/cookies/matcha",
     shopUrl: "https://lanagranola.base.shop/items/138276994",
     price: "2,160円（税込）",
@@ -344,6 +368,11 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     name: "オートミール焼きドーナツ プレーン 6個入り",
     breadcrumb: "プレーン 6個入り",
     image: "/plain-oatmeal-donut.png",
+    galleryImages: [
+      "/plain-oatmeal-donut.png",
+      "/images/products/donut-plain-box.jpg",
+      "/images/products/donut-plain-info.jpg",
+    ],
     href: "/donuts/oatmeal-donuts/plain",
     shopUrl: "https://lanagranola.base.shop/items/133964018",
     price: "2,400円（税込）",
@@ -365,6 +394,11 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     name: "オートミール焼きドーナツ ココア 6個入り",
     breadcrumb: "ココア 6個入り",
     image: "/cocoa-oatmeal-donut.png",
+    galleryImages: [
+      "/cocoa-oatmeal-donut.png",
+      "/images/products/donut-cocoa-box.jpg",
+      "/images/products/donut-cocoa-info.png",
+    ],
     href: "/donuts/oatmeal-donuts/cocoa",
     shopUrl: "https://lanagranola.base.shop/items/133545169",
     price: "2,400円（税込）",
@@ -386,6 +420,11 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     name: "オートミール焼きドーナツ 西尾抹茶 6個入り",
     breadcrumb: "西尾抹茶 6個入り",
     image: "/matcha-oatmeal-donut.png",
+    galleryImages: [
+      "/matcha-oatmeal-donut.png",
+      "/images/products/donut-matcha-box.jpg",
+      "/images/products/donut-matcha-info.jpg",
+    ],
     href: "/donuts/oatmeal-donuts/matcha",
     shopUrl: "https://lanagranola.base.shop/items/133964069",
     price: "2,400円（税込）",
@@ -407,6 +446,11 @@ export const donutFlavorCatalogProducts: CatalogProduct[] = [
     name: "オートミール焼きドーナツ 紅茶 6個入り",
     breadcrumb: "紅茶 6個入り",
     image: "/tea-oatmeal-donut.png",
+    galleryImages: [
+      "/tea-oatmeal-donut.png",
+      "/images/products/donut-tea-box.jpg",
+      "/images/products/donut-tea-info.png",
+    ],
     href: "/donuts/oatmeal-donuts/tea",
     shopUrl: "https://lanagranola.base.shop/items/133711930",
     price: "2,400円（税込）",
