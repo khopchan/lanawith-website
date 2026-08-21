@@ -97,8 +97,6 @@ export const donutSetProduct: DonutProduct = {
     { src: "/images/products/donut-cocoa-info.png", alt: "ココア説明" },
     { src: "/images/products/donut-set-matcha-info.png", alt: "抹茶説明" },
     { src: "/images/products/donut-tea-info.png", alt: "紅茶説明" },
-    { src: "/plain-oatmeal-donut.png", alt: "プレーン単体" },
-    { src: "/oatmeal-donuts-gift-box.png", alt: "ギフトボックス" },
   ],
 }
 
