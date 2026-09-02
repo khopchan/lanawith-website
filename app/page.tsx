@@ -964,6 +964,18 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
               </p>
             </div>
           </div>
+
+          <div className="mt-10 md:mt-12 text-center">
+            <a
+              href="https://note.com/lanawith_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl border border-brand-border bg-white px-5 py-3 min-h-[44px] text-[14px] md:text-[15px] text-brand-text hover:bg-brand-bg transition-colors japanese-text"
+            >
+              LANA WITH. noteを読む
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </section>
 
