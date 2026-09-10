@@ -726,7 +726,7 @@ export default function HomePage() {
                 >
                   {`見ただけで、おいしさが伝わるように。
 
-LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしています。
+LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプルな名前を大切にしていま��。
 
 選ぶ時間も楽しんでいただけるように。
 
@@ -995,7 +995,7 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             {/* Product Images - 2 images side by side */}
             <div className="grid grid-cols-2 gap-6 mb-12">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
-                <img src="/granola-bowl-with-milk.jpg" alt="グラノーラボウル" className="w-full h-full object-cover" />
+                <img src="/images/img-4441.jpeg" alt="グラノーラボウル" className="w-full h-full object-cover" />
               </div>
               <div className="aspect-square rounded-2xl overflow-hidden shadow-lg">
                 <img src="/matcha-granola-parfait.png" alt="抹茶パフェ" className="w-full h-full object-cover" />
@@ -1133,25 +1133,25 @@ LANA WITH.の商品名は、素材や味わいがひと目で伝わるシンプ�
             </div>
 
             <div className="space-y-4">
-              <h3 className="font-serif text-lg">会社情報</h3>
+              <h3 className="font-serif text-lg">ご案内</h3>
               <ul className="space-y-2 text-brand-text-muted japanese-text">
                 <li>
-                  <a href="#" className="hover:text-brand-text transition-colors">
+                  <a href="/about" className="hover:text-brand-text transition-colors">
                     私たちについて
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-brand-text transition-colors">
+                  <a href="https://lin.ee/bxHhY8L" target="_blank" rel="noopener noreferrer" className="hover:text-brand-text transition-colors">
                     お問い合わせ
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-brand-text transition-colors">
+                  <a href="https://lanagranola.base.shop/p/00003" target="_blank" rel="noopener noreferrer" className="hover:text-brand-text transition-colors">
                     配送について
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-brand-text transition-colors">
+                  <a href="https://lanagranola.base.shop/privacy" target="_blank" rel="noopener noreferrer" className="hover:text-brand-text transition-colors">
                     プライバシーポリシー
                   </a>
                 </li>
