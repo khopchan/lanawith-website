@@ -41,7 +41,7 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
       </header>
 
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center space-x-2 text-sm text-brand-text-muted">
+        <div className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1 text-sm text-brand-text-muted japanese-text">
           <a href="/" className="hover:text-brand-text transition-colors">
             ホーム
           </a>
@@ -50,15 +50,15 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
             ドーナツ
           </a>
           <span>/</span>
-          <span>{product.breadcrumb}</span>
+          <span className="min-w-0 break-words">{product.breadcrumb}</span>
         </div>
       </div>
 
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="space-y-4">
+            <div className="grid min-w-0 md:grid-cols-2 gap-12">
+              <div className="min-w-0 space-y-4">
                 <div className="aspect-square rounded-2xl overflow-hidden border border-brand-border bg-white">
                   <img src={activeImage} alt={activeAlt} className="w-full h-full object-cover" />
                 </div>
@@ -84,7 +84,7 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                 ) : null}
               </div>
 
-              <div className="space-y-6">
+              <div className="min-w-0 space-y-6">
                 <div>
                   <h1 className="font-heading-jp text-3xl md:text-4xl text-brand-text mb-4">{product.name}</h1>
                   {product.price ? (
@@ -114,7 +114,7 @@ export default function DonutProductDetail({ product }: { product: DonutProduct 
                   </div>
                 ) : null}
 
-                <div className="space-y-4">
+<div className="min-w-0 space-y-4">
                   {product.description ? (
                     <div className="flex items-start space-x-3">
                       <Package className="w-5 h-5 text-brand-text-muted mt-1" />

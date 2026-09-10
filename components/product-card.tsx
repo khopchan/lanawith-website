@@ -27,7 +27,7 @@ export function ProductCard({ item }: { item: ProductCardItem }) {
         />
       </div>
       <div className="p-3 md:p-4">
-        <h3 className="text-[15px] md:text-base font-semibold text-brand-text line-clamp-2">{item.name}</h3>
+        <h3 className="min-h-[4.5rem] text-[15px] md:min-h-0 md:text-base font-semibold text-brand-text line-clamp-3 md:line-clamp-2">{item.name}</h3>
         {item.description ? (
           <p className="mt-1 hidden sm:line-clamp-2 text-[13px] text-brand-text-muted md:block">{item.description}</p>
         ) : null}
