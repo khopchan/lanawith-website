@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Lato, Noto_Sans_JP } from "next/font/google"
+import HomeLanguageSwitcher from "@/components/home-language-switcher"
 import "./globals.css"
 
 const lato = Lato({
@@ -32,7 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${lato.variable} ${notoSansJP.variable} antialiased`}>
-      <body>{children}</body>
+      <body>
+        <HomeLanguageSwitcher />
+        {children}
+      </body>
     </html>
   )
 }
