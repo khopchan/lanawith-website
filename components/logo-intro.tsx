@@ -2,120 +2,95 @@
 
 import { useEffect, useState } from "react"
 
-const STORAGE_KEY = "lana-intro-seen"
-const FADE_IN_MS = 700
-const HOLD_MS = 900
-const FADE_OUT_MS = 600
+const FADE_IN_MS = 1400
+const HOLD_MS = 1800
+const FADE_OUT_MS = 1400
+const TOTAL_MS = FADE_IN_MS + HOLD_MS + FADE_OUT_MS
+const EASE = "cubic-bezier(0.22, 0.61, 0.36, 1)"
 
-type Phase = "idle" | "in" | "hold" | "out"
+/** Prevents React remount / Strict Mode from playing the intro twice in one page load. */
+let introLockForThisPageLoad = false
+
+type Phase = "show" | "hiding" | "done"
 
 export default function LogoIntro() {
-  const [phase, setPhase] = useState<Phase | "skip">("skip")
-  const [ready, setReady] = useState(false)
+  const [phase, setPhase] = useState<Phase | "boot">("boot")
 
   useEffect(() => {
-    let cancelled = false
-    const timers: number[] = []
-
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    let alreadySeen = false
-    try {
-      alreadySeen = sessionStorage.getItem(STORAGE_KEY) === "1"
-    } catch {
-      alreadySeen = false
-    }
-
-    if (alreadySeen || reducedMotion) {
-      if (reducedMotion && !alreadySeen) {
-        try {
-          sessionStorage.setItem(STORAGE_KEY, "1")
-        } catch {
-          // ignore
-        }
-      }
-      setPhase("skip")
-      setReady(true)
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setPhase("done")
       return
     }
 
-    setPhase("idle")
-    setReady(true)
+    if (introLockForThisPageLoad) {
+      setPhase("done")
+      return
+    }
+    introLockForThisPageLoad = true
 
-    timers.push(
-      window.setTimeout(() => {
-        if (!cancelled) setPhase("in")
-      }, 20),
-    )
-    timers.push(
-      window.setTimeout(() => {
-        if (!cancelled) setPhase("hold")
-      }, 20 + FADE_IN_MS),
-    )
-    timers.push(
-      window.setTimeout(() => {
-        if (!cancelled) setPhase("out")
-      }, 20 + FADE_IN_MS + HOLD_MS),
-    )
-    timers.push(
-      window.setTimeout(() => {
-        if (!cancelled) {
-          setPhase("skip")
-          try {
-            sessionStorage.setItem(STORAGE_KEY, "1")
-          } catch {
-            // ignore
-          }
-        }
-      }, 20 + FADE_IN_MS + HOLD_MS + FADE_OUT_MS),
-    )
+    setPhase("show")
+
+    const hideTimer = window.setTimeout(() => setPhase("hiding"), FADE_IN_MS + HOLD_MS)
+    const doneTimer = window.setTimeout(() => setPhase("done"), TOTAL_MS)
 
     return () => {
-      cancelled = true
-      timers.forEach((id) => window.clearTimeout(id))
+      window.clearTimeout(hideTimer)
+      window.clearTimeout(doneTimer)
     }
   }, [])
 
-  const dismiss = () => {
-    setPhase("out")
-    window.setTimeout(() => {
-      setPhase("skip")
-      try {
-        sessionStorage.setItem(STORAGE_KEY, "1")
-      } catch {
-        // ignore
-      }
-    }, FADE_OUT_MS)
-  }
+  useEffect(() => {
+    if (phase !== "hiding") return
+    const doneTimer = window.setTimeout(() => setPhase("done"), FADE_OUT_MS)
+    return () => window.clearTimeout(doneTimer)
+  }, [phase])
 
-  if (!ready || phase === "skip") {
+  if (phase === "boot" || phase === "done") {
     return null
   }
 
-  const logoVisible = phase === "in" || phase === "hold"
-  const overlayOpaque = phase === "idle" || phase === "in" || phase === "hold"
+  const visible = phase === "show"
 
   return (
     <div
-      className="fixed inset-0 z-[200] flex items-center justify-center bg-white"
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-brand-bg-alt"
       style={{
-        opacity: overlayOpaque ? 1 : 0,
-        transition: `opacity ${FADE_OUT_MS}ms ease`,
-        pointerEvents: phase === "out" ? "none" : "auto",
+        opacity: visible ? 1 : 0,
+        transition: `opacity ${FADE_OUT_MS}ms ${EASE}`,
+        pointerEvents: visible ? "auto" : "none",
       }}
       role="presentation"
       aria-hidden="true"
-      onClick={dismiss}
+      onClick={() => {
+        if (phase === "show") setPhase("hiding")
+      }}
     >
-      <p
-        className="font-serif text-brand-text text-4xl sm:text-5xl md:text-6xl tracking-wide select-none"
-        style={{
-          opacity: logoVisible ? 1 : 0,
-          transform: logoVisible ? "scale(1)" : "scale(0.96)",
-          transition: `opacity ${FADE_IN_MS}ms ease, transform ${FADE_IN_MS}ms ease`,
-        }}
-      >
-        LANA WITH.
-      </p>
+      <style>{`
+        @keyframes lana-logo-in {
+          from { opacity: 0; transform: translateY(8px) scale(0.985); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes lana-rule-in {
+          from { opacity: 0; transform: scaleX(0.4); }
+          to { opacity: 0.7; transform: scaleX(1); }
+        }
+      `}</style>
+      <div className="flex flex-col items-center px-6 text-center">
+        <p
+          className="font-serif !font-normal text-brand-text text-[2rem] sm:text-5xl md:text-6xl tracking-[0.12em] select-none"
+          style={{ animation: `lana-logo-in ${FADE_IN_MS}ms ${EASE} forwards` }}
+        >
+          LANA WITH.
+        </p>
+        <span
+          className="mt-5 block h-px w-10 bg-brand-border"
+          style={{
+            opacity: 0,
+            animation: `lana-rule-in ${FADE_IN_MS}ms ${EASE} 180ms forwards`,
+          }}
+          aria-hidden="true"
+        />
+      </div>
     </div>
   )
 }
