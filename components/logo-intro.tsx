@@ -77,7 +77,7 @@ export default function LogoIntro() {
       `}</style>
       <div className="flex flex-col items-center px-6 text-center">
         <p
-          className="font-serif !font-normal text-brand-text text-[2rem] sm:text-5xl md:text-6xl tracking-[0.12em] select-none"
+          className="font-serif !font-bold text-brand-text text-[2rem] sm:text-5xl md:text-6xl tracking-[0.12em] select-none"
           style={{ animation: `lana-logo-in ${FADE_IN_MS}ms ${EASE} forwards` }}
         >
           LANA WITH.
