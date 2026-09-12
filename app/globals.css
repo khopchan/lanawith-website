@@ -252,3 +252,18 @@
     letter-spacing: .01em;
   }
 }
+
+/* HOME: LANA WITH.のこだわり - 3つの円形アイコンだけを非表示 */
+#about > .container > .grid > .text-center > div:first-child {
+  display: none;
+}
+
+/* アイコンを外した後も見出し位置が不自然にならないよう、先頭見出しの余白のみ補正 */
+#about > .container > .grid > .text-center > h3 {
+  margin-top: 0;
+}
+
+/* HOME左上のLANA WITH.ロゴは文字サイズを変えず、太さだけを上げる */
+header.absolute > .container > a[href="/"] {
+  font-weight: 700;
+}
