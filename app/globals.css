@@ -258,9 +258,18 @@
   display: none;
 }
 
-/* アイコンを外した後も見出し位置が不自然にならないよう、先頭見出しの余白のみ補正 */
+/* アイコンを外した後も見出し位置が不自然にならないよう、先頭見出しの余白を補正し、見出しを強調 */
 #about > .container > .grid > .text-center > h3 {
   margin-top: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  #about > .container > .grid > .text-center > h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
 }
 
 /* HOME左上のLANA WITH.ロゴは文字サイズを変えず、太さだけを上げる */
