@@ -263,12 +263,14 @@
   margin-top: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
   #about > .container > .grid > .text-center > h3 {
     font-size: 1.5rem;
     line-height: 1.4;
+    font-weight: 300;
   }
 }
 
