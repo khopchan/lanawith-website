@@ -1,0 +1,78 @@
+/* HOME / with 私たちと一緒に: OEM section responsive layout */
+
+/* Reorder the existing elements without changing the page copy semantics:
+   heading -> images -> OEM link text -> description/buttons */
+section:has(.oem-copy) > .container {
+  display: grid;
+}
+
+section:has(.oem-copy) > .container > .text-center:first-child,
+section:has(.oem-copy) > .container > .max-w-4xl {
+  display: contents;
+}
+
+section:has(.oem-copy) > .container > .text-center:first-child > h2 {
+  grid-row: 1;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section:has(.oem-copy) > .container > .max-w-4xl > .grid {
+  grid-row: 2;
+  width: 100%;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+section:has(.oem-copy) > .container > .text-center:first-child > p {
+  grid-row: 3;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section:has(.oem-copy) > .container > .max-w-4xl > .text-center {
+  grid-row: 4;
+  width: 100%;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Render deliberate line breaks for the OEM description.
+   The original text remains in the DOM; this controls only its visual layout. */
+.oem-copy {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+.oem-copy::before {
+  content: "LANA WITH.では、\A OEM生産・卸販売のご依頼も\A 承っております。\A\A 一緒にオリジナル商品づくりを\A してみませんか？\A\A お気軽にお問い合わせください。";
+  display: block;
+  white-space: pre-line;
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #2f2f2d;
+}
+
+@media (min-width: 1024px) {
+  section:has(.oem-copy) > .container > .text-center:first-child > h2 {
+    margin-bottom: 4rem;
+  }
+
+  section:has(.oem-copy) > .container > .max-w-4xl > .grid {
+    margin-bottom: 2.5rem;
+  }
+
+  .oem-copy::before {
+    content: "LANA WITH.では、OEM生産・卸販売のご依頼も承っております。\A 一緒にオリジナル商品づくりをしてみませんか？ お気軽にお問い合わせください。";
+    font-size: 1.125rem;
+    line-height: 1.8;
+    letter-spacing: 0.05em;
+  }
+}
