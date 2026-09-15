@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Lato, Noto_Sans_JP } from "next/font/google"
 import "./globals.css"
+import "./oem-responsive.css"
 
 const lato = Lato({
   subsets: ["latin"],
